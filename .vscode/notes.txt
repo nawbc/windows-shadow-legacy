@@ -1,0 +1,300 @@
+
+热区 左上  右上
+
+双击显示菜单
+
+左右上下边 触发 Hover 事件
+
+显示固定应用列表 提供网格 或 条形
+
+安装字体
+
+程序使用 z order 向上叠加
+
+子级系统模式  隐藏系统桌面图标，底部duck栏 显示shadow 的桌面 显示类似chrome os
+
+应用 分为 1. quick app 轻量应用 提供快速开发的框架, 实现的都是一些小功能 2. normal app 普通的应用 使用原生的web 开发方式 提供 main 入口 3. plugin
+
+页面不能显示太多 考虑性s能
+
+唤出 显示应用 塞回去 显示动态壁纸
+
+两元应用商店
+
+// ui
+
+位置元素 都包含偏移量
+
+center 
+
+异常捕获组件 全局 使用 <code /> 弹出
+异常的沙箱 <ErrorSandBox /> 
+
+RelationAnchor 跟随滚动 变化菜单选项
+
+
+tab 可以选定tabpane preRender={2}
+
+
+hq5herabzdkmejisomhu63niupp53kk4jkcdsjtmjuocofhjytgq
+
+交错staggered grid布局 元素大小不同
+
+trigger 触发器
+interceptor 拦截器
+
+禁用所有user-select
+
+outOfVisibleArea
+
+
+
+
+//for 开发者 
+根据shadow.json 打包shadow app
+
+提供 以.shadow 结尾的app安装包
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#ifndef UNICODE
+#define UNICODE
+#endif
+
+#include <iostream>
+#include <string>
+#include <windows.h>
+#include <exception>
+#include <tchar.h>
+#include <stdlib.h> 
+#include <vector>
+// windows shell 
+#include <shlobj.h>
+
+#define BTN_ONE     3301  
+#define BTN_TWO     3302  
+#define BTN_THREE   3303  
+#define SPLIT_SHELL 0x052c
+
+void SendLWinAndTab() {
+	INPUT ip;
+	// 设置键盘事件类型
+	ip.type = INPUT_KEYBOARD;
+	ip.ki.wScan = 0; // hardware scan code for key
+	ip.ki.time = 0;
+	ip.ki.dwExtraInfo = 0;
+
+	// Press the "WIN" key
+	ip.ki.wVk = VK_LWIN;
+	ip.ki.dwFlags = 0; // 0 表示按下
+	SendInput(1, &ip, sizeof(INPUT));
+
+	// Press the "Alt" key
+	ip.ki.wVk = VK_TAB;
+	ip.ki.dwFlags = 0; // 0 表示按下
+	SendInput(1, &ip, sizeof(INPUT));
+
+	// 要记得释放这些按键 否则这三个键属于按下状态
+	ip.ki.wVk = VK_LWIN;
+	ip.ki.dwFlags = KEYEVENTF_KEYUP;
+	SendInput(1, &ip, sizeof(INPUT));
+	ip.ki.wVk = VK_TAB;
+	ip.ki.dwFlags = KEYEVENTF_KEYUP;
+	SendInput(1, &ip, sizeof(INPUT));
+}
+
+
+using namespace std;
+
+HWND background_worker_w;
+HWND basic_window_handle;
+HWND qt_hwnd;
+HWND front_worker_w;
+DWORD  lastClickTime;
+bool isFirstClick = true;
+bool isBackground = false;
+HWND shell_view;
+HWND folder_view;
+HHOOK mouseHook;
+HHOOK kbHook;
+int clickCount = 0;
+HWND progman_handle;
+
+
+BOOL CALLBACK EnumWindowProc(HWND hwnd, LPARAM lParam) {
+	shell_view = FindWindowEx(hwnd, 0, L"SHELLDLL_DefView", nullptr);
+	HWND tmp_folder_view = FindWindowEx(shell_view, 0, L"SysListView32", nullptr);
+
+	if (shell_view != nullptr && tmp_folder_view != nullptr) {
+		front_worker_w = hwnd;
+		folder_view = tmp_folder_view;
+
+		background_worker_w = FindWindowEx(0, hwnd, L"WorkerW", nullptr);
+	}
+
+	return true;
+}
+
+LRESULT CALLBACK MouseHookProc(int nCode, WPARAM wParam, LPARAM lParam)
+{
+
+	MOUSEHOOKSTRUCT* mshook = (MOUSEHOOKSTRUCT*)lParam;
+	cout << " x: " << mshook->pt.x << " y: " << mshook->pt.y << endl;
+	HWND current_hwnd = WindowFromPoint(mshook->pt);
+
+
+	if (mshook->pt.x >= 1920 && !isBackground) {
+		SetParent(qt_hwnd, background_worker_w);
+		SendMessage(qt_hwnd, WM_SYSCOMMAND, SC_MAXIMIZE, 0);
+		int screenWidth = GetSystemMetrics(SM_CXSCREEN);
+		int screenHeight = GetSystemMetrics(SM_CYSCREEN);
+		SetWindowPos(qt_hwnd, NULL, 0, 0, screenWidth, screenHeight, SWP_NOZORDER);
+		isBackground = true;
+	}
+
+	//if (current_hwnd == folder_view || current_hwnd == front_worker_w || current_hwnd == progman_handle) {
+		// 把鼠标消息全都发给qt_hwnd
+	if (isBackground) {
+		SendMessage(qt_hwnd, wParam, 0, MAKELPARAM(mshook->pt.x, mshook->pt.y));
+	}
+
+
+	if (wParam == WM_MOUSEWHEEL) {
+		//cout << "fucker" << endl;
+		int  y = int(wParam);
+		cout << y << endl;
+		SendMessage(qt_hwnd, wParam, 0, lParam);
+	}
+
+
+	if (nCode >= 0)
+	{
+		if (wParam == WM_LBUTTONUP)
+		{
+			if (clickCount != 4) {
+				clickCount++;
+				lastClickTime = GetTickCount();
+			}
+			else if (clickCount == 4) {
+				DWORD currentTime = GetTickCount();
+				if (currentTime - lastClickTime <= GetDoubleClickTime()) {
+					cout << "double" << endl;
+					if (isBackground) {
+						SetParent(qt_hwnd, GetDesktopWindow());
+						UnhookWindowsHookEx(mouseHook);
+						//SystemParametersInfo(SPI_SETDESKWALLPAPER, 0, "C:\\", SPIF_SENDWININICHANGE | SPIF_UPDATEINIFILE);
+
+						// 广播系统设置改变  比如，你要隐藏托盘图标。
+						//SendMessage(HWND_BROADCAST, WM_SETTINGCHANGE, 0, 0);
+						SendMessage(qt_hwnd, WM_SYSCOMMAND, SC_MAXIMIZE, 0);
+						int screenWidth = GetSystemMetrics(SM_CXSCREEN);
+						int screenHeight = GetSystemMetrics(SM_CYSCREEN);
+						SetWindowPos(qt_hwnd, NULL, 0, 0, screenWidth, screenHeight, SWP_NOZORDER);
+						// 刷新桌面内容
+						//SHChangeNotify(SHCNE_ASSOCCHANGED, SHCNF_IDLIST, NULL, NULL);
+
+						clickCount = 0;
+						mouseHook = SetWindowsHookEx(WH_MOUSE_LL, MouseHookProc, GetModuleHandle(0), NULL);
+						isBackground = false;
+					}
+				}
+				else {
+					clickCount = 0;
+					lastClickTime = currentTime;
+				}
+			}
+		}
+	}
+
+	//}
+
+
+
+
+
+	return CallNextHookEx(NULL, nCode, wParam, lParam);
+}
+
+
+typedef BOOL(CALLBACK* DBLCLICKCALLBACK)(WPARAM);
+
+
+LRESULT CALLBACK KeybdHookProc(int nCode, WPARAM wParam, LPARAM lParam) {
+	PKBDLLHOOKSTRUCT kbdHook = (PKBDLLHOOKSTRUCT)lParam;
+
+
+	/*if (wParam == WM_KEYDOWN || wParam == WM_KEYUP) {
+
+	}*/
+	SendMessage(qt_hwnd, wParam, 0, kbdHook->vkCode);
+
+	return CallNextHookEx(NULL, nCode, wParam, lParam);
+}
+
+int main()
+{
+
+	int qt = 0x00010414;
+	qt_hwnd = (HWND)qt;
+
+	//OutputDebugString(L"fuck");
+	PDWORD_PTR result = {};
+	progman_handle = FindWindow(L"Progman", nullptr);
+	//SendMessage(progman_handle, WM_USER + 1, 0, 0);
+	LRESULT msgResult = SendMessageTimeout(progman_handle, SPLIT_SHELL, 0, 0, SMTO_NORMAL, 2000, result);
+	cout << msgResult << endl;
+	EnumWindows(EnumWindowProc, NULL);
+	int screenWidth = GetSystemMetrics(SM_CXSCREEN);
+	int screenHeight = GetSystemMetrics(SM_CYSCREEN);
+
+	//HWND desktop = GetDesktopWindow();
+	//cout << desktop << endl;
+	cout << progman_handle << "\n" << front_worker_w << "\n" << folder_view << endl;
+	//wchar_t title[200];
+	//GetWindowText(GetForegroundWindow(), title, 200);
+	//cout << GetForegroundWindow() << endl;
+	//wcout << title << endl;
+	SetWindowPos(qt_hwnd, NULL, 0, 0, screenWidth, screenHeight, SWP_NOZORDER);
+	SetParent(qt_hwnd, background_worker_w);
+	isBackground = true;
+	//ShowWindow(qt_hwnd, WS_MAXIMIZE);
+	SendMessage(qt_hwnd, WM_SYSCOMMAND, SC_MAXIMIZE, 0);
+	//UpdateWindow(qt_hwnd);
+
+	//DWORD id = GetWindowThreadProcessId(front_worker_w, NULL);
+	wchar_t title[200];
+	GetWindowText(front_worker_w, title, 200);
+	wcout << title << endl;
+
+	//HINSTANCE hInstance = reinterpret_cast<HINSTANCE>(GetWindowLong(front_worker_w, GWLP_HINSTANCE));
+	//GetThreadDesktop();
+	DWORD PID, TID;
+	TID = GetWindowThreadProcessId(folder_view, &PID);
+
+	mouseHook = SetWindowsHookEx(WH_MOUSE_LL, MouseHookProc, GetModuleHandle(0), TID);
+	kbHook = SetWindowsHookEx(WH_KEYBOARD_LL, KeybdHookProc, GetModuleHandle(0), NULL);
+	MSG msg = {};
+	while (GetMessage(&msg, NULL, NULL, NULL))
+	{
+		TranslateMessage(&msg);
+		DispatchMessage(&msg);
+	}
+	UnhookWindowsHookEx(mouseHook);
+	UnhookWindowsHookEx(kbHook);
+
+
+	return 0;
+	//Sleep(599999999000);
+}

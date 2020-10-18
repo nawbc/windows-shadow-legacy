@@ -1,0 +1,31 @@
+{
+	"name": "shadow-app",
+	"private": true,
+	"scripts": {
+		"start:app": "lerna exec --scope=shadow-app -- npm run start",
+		"clean:app": "lerna exec --scope=shadow-app -- npm run clean",
+		"release:app": "lerna exec --scope=shadow-app -- npm run release",
+		"link:app": "lerna add shadow-ui --scope=shadow-app && lerna add shadow-addon --scope=shadow-app",
+		"link:addon": "lerna add win-win --scope=shadow-addon",
+		"release:addon": "npm-run-all start:addon:*",
+		"build:winwin": "lerna exec --scope=win-win -- npm run build",
+		"watch:winwin": "lerna exec --scope=win-win -- npm run watch",
+		"cloc": "cloc ./packages --windows --quiet --exclude-dir=node_modules,test,dist,build,.vscode,temp  --exclude-ext=editorconfig,eslintignore,json,log,md,bat,gitattributes,gitignore,eslintrct",
+		"changelog": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0"
+	},
+	"engines": {
+		"npm": "6.14.4",
+		"node": ">=12.17.0"
+	},
+	"devDependencies": {
+		"cloc": "^2.5.1",
+		"conventional-changelog": "^3.1.21",
+		"cz-conventional-changelog": "^3.2.0",
+		"lerna": "^3.22.1"
+	},
+	"config": {
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
+		}
+	}
+}

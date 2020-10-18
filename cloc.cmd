@@ -1,0 +1,1 @@
+cloc ./packages --quiet --exclude-dir=node_modules,test,dist,build,.vscode,temp  --exclude-ext=editorconfig,eslintignore,json,log,md,bat,gitattributes,gitignore,eslintrct

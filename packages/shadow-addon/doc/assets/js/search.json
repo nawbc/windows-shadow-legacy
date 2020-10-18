@@ -1,0 +1,5268 @@
+{
+  "kinds": {
+    "1": "Module",
+    "4": "Enumeration",
+    "16": "Enumeration member",
+    "32": "Variable",
+    "128": "Class",
+    "256": "Interface",
+    "512": "Constructor",
+    "1024": "Property",
+    "2048": "Method",
+    "65536": "Type literal",
+    "262144": "Accessor",
+    "2097152": "Object literal"
+  },
+  "rows": [
+    {
+      "id": 0,
+      "kind": 1,
+      "name": "\"lib/init_options\"",
+      "url": "modules/_lib_init_options_.html",
+      "classes": "tsd-kind-module"
+    },
+    {
+      "id": 1,
+      "kind": 256,
+      "name": "ShadowMouseOptions",
+      "url": "interfaces/_lib_init_options_.shadowmouseoptions.html",
+      "classes": "tsd-kind-interface tsd-parent-kind-module",
+      "parent": "\"lib/init_options\""
+    },
+    {
+      "id": 2,
+      "kind": 1024,
+      "name": "autoCreateThread",
+      "url": "interfaces/_lib_init_options_.shadowmouseoptions.html#autocreatethread",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "\"lib/init_options\".ShadowMouseOptions"
+    },
+    {
+      "id": 3,
+      "kind": 1024,
+      "name": "clickEmitCount",
+      "url": "interfaces/_lib_init_options_.shadowmouseoptions.html#clickemitcount",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "\"lib/init_options\".ShadowMouseOptions"
+    },
+    {
+      "id": 4,
+      "kind": 1024,
+      "name": "clickEmitDuration",
+      "url": "interfaces/_lib_init_options_.shadowmouseoptions.html#clickemitduration",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "\"lib/init_options\".ShadowMouseOptions"
+    },
+    {
+      "id": 5,
+      "kind": 1024,
+      "name": "interactive",
+      "url": "interfaces/_lib_init_options_.shadowmouseoptions.html#interactive",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "\"lib/init_options\".ShadowMouseOptions"
+    },
+    {
+      "id": 6,
+      "kind": 256,
+      "name": "EmbeddedOption",
+      "url": "interfaces/_lib_init_options_.embeddedoption.html",
+      "classes": "tsd-kind-interface tsd-parent-kind-module",
+      "parent": "\"lib/init_options\""
+    },
+    {
+      "id": 7,
+      "kind": 1024,
+      "name": "maximize",
+      "url": "interfaces/_lib_init_options_.embeddedoption.html#maximize",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "\"lib/init_options\".EmbeddedOption"
+    },
+    {
+      "id": 8,
+      "kind": 256,
+      "name": "ShadowWindowActionOption",
+      "url": "interfaces/_lib_init_options_.shadowwindowactionoption.html",
+      "classes": "tsd-kind-interface tsd-parent-kind-module",
+      "parent": "\"lib/init_options\""
+    },
+    {
+      "id": 9,
+      "kind": 1024,
+      "name": "isDebug",
+      "url": "interfaces/_lib_init_options_.shadowwindowactionoption.html#isdebug",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "\"lib/init_options\".ShadowWindowActionOption"
+    },
+    {
+      "id": 10,
+      "kind": 1024,
+      "name": "mouse",
+      "url": "interfaces/_lib_init_options_.shadowwindowactionoption.html#mouse",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "\"lib/init_options\".ShadowWindowActionOption"
+    },
+    {
+      "id": 11,
+      "kind": 1024,
+      "name": "alawaysOnTop",
+      "url": "interfaces/_lib_init_options_.shadowwindowactionoption.html#alawaysontop",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "\"lib/init_options\".ShadowWindowActionOption"
+    },
+    {
+      "id": 12,
+      "kind": 32,
+      "name": "GetDoubleClickTime",
+      "url": "modules/_lib_init_options_.html#getdoubleclicktime",
+      "classes": "tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported",
+      "parent": "\"lib/init_options\""
+    },
+    {
+      "id": 13,
+      "kind": 2097152,
+      "name": "initShadowMouseOptions",
+      "url": "modules/_lib_init_options_.html#initshadowmouseoptions",
+      "classes": "tsd-kind-object-literal tsd-parent-kind-module",
+      "parent": "\"lib/init_options\""
+    },
+    {
+      "id": 14,
+      "kind": 32,
+      "name": "autoCreateThread",
+      "url": "modules/_lib_init_options_.html#initshadowmouseoptions.autocreatethread",
+      "classes": "tsd-kind-variable tsd-parent-kind-object-literal",
+      "parent": "\"lib/init_options\".initShadowMouseOptions"
+    },
+    {
+      "id": 15,
+      "kind": 32,
+      "name": "clickEmitCount",
+      "url": "modules/_lib_init_options_.html#initshadowmouseoptions.clickemitcount",
+      "classes": "tsd-kind-variable tsd-parent-kind-object-literal",
+      "parent": "\"lib/init_options\".initShadowMouseOptions"
+    },
+    {
+      "id": 16,
+      "kind": 32,
+      "name": "clickEmitDuration",
+      "url": "modules/_lib_init_options_.html#initshadowmouseoptions.clickemitduration",
+      "classes": "tsd-kind-variable tsd-parent-kind-object-literal",
+      "parent": "\"lib/init_options\".initShadowMouseOptions"
+    },
+    {
+      "id": 17,
+      "kind": 32,
+      "name": "interactive",
+      "url": "modules/_lib_init_options_.html#initshadowmouseoptions.interactive",
+      "classes": "tsd-kind-variable tsd-parent-kind-object-literal",
+      "parent": "\"lib/init_options\".initShadowMouseOptions"
+    },
+    {
+      "id": 18,
+      "kind": 2097152,
+      "name": "initEmbeddedOption",
+      "url": "modules/_lib_init_options_.html#initembeddedoption",
+      "classes": "tsd-kind-object-literal tsd-parent-kind-module",
+      "parent": "\"lib/init_options\""
+    },
+    {
+      "id": 19,
+      "kind": 32,
+      "name": "maximize",
+      "url": "modules/_lib_init_options_.html#initembeddedoption.maximize",
+      "classes": "tsd-kind-variable tsd-parent-kind-object-literal",
+      "parent": "\"lib/init_options\".initEmbeddedOption"
+    },
+    {
+      "id": 20,
+      "kind": 2097152,
+      "name": "initShadowWindowActionOption",
+      "url": "modules/_lib_init_options_.html#initshadowwindowactionoption",
+      "classes": "tsd-kind-object-literal tsd-parent-kind-module",
+      "parent": "\"lib/init_options\""
+    },
+    {
+      "id": 21,
+      "kind": 32,
+      "name": "isDebug",
+      "url": "modules/_lib_init_options_.html#initshadowwindowactionoption.isdebug",
+      "classes": "tsd-kind-variable tsd-parent-kind-object-literal",
+      "parent": "\"lib/init_options\".initShadowWindowActionOption"
+    },
+    {
+      "id": 22,
+      "kind": 32,
+      "name": "mouse",
+      "url": "modules/_lib_init_options_.html#initshadowwindowactionoption.mouse",
+      "classes": "tsd-kind-variable tsd-parent-kind-object-literal",
+      "parent": "\"lib/init_options\".initShadowWindowActionOption"
+    },
+    {
+      "id": 23,
+      "kind": 65536,
+      "name": "__type",
+      "url": "modules/_lib_init_options_.html#initshadowwindowactionoption.mouse.__type",
+      "classes": "tsd-kind-type-literal tsd-parent-kind-variable",
+      "parent": "\"lib/init_options\".initShadowWindowActionOption.mouse"
+    },
+    {
+      "id": 24,
+      "kind": 32,
+      "name": "autoCreateThread",
+      "url": "modules/_lib_init_options_.html#initshadowwindowactionoption.mouse.__type.autocreatethread-1",
+      "classes": "tsd-kind-variable tsd-parent-kind-type-literal",
+      "parent": "\"lib/init_options\".initShadowWindowActionOption.mouse.__type"
+    },
+    {
+      "id": 25,
+      "kind": 32,
+      "name": "clickEmitCount",
+      "url": "modules/_lib_init_options_.html#initshadowwindowactionoption.mouse.__type.clickemitcount-1",
+      "classes": "tsd-kind-variable tsd-parent-kind-type-literal",
+      "parent": "\"lib/init_options\".initShadowWindowActionOption.mouse.__type"
+    },
+    {
+      "id": 26,
+      "kind": 32,
+      "name": "clickEmitDuration",
+      "url": "modules/_lib_init_options_.html#initshadowwindowactionoption.mouse.__type.clickemitduration-1",
+      "classes": "tsd-kind-variable tsd-parent-kind-type-literal",
+      "parent": "\"lib/init_options\".initShadowWindowActionOption.mouse.__type"
+    },
+    {
+      "id": 27,
+      "kind": 32,
+      "name": "interactive",
+      "url": "modules/_lib_init_options_.html#initshadowwindowactionoption.mouse.__type.interactive-1",
+      "classes": "tsd-kind-variable tsd-parent-kind-type-literal",
+      "parent": "\"lib/init_options\".initShadowWindowActionOption.mouse.__type"
+    },
+    {
+      "id": 28,
+      "kind": 32,
+      "name": "alawaysOnTop",
+      "url": "modules/_lib_init_options_.html#initshadowwindowactionoption.alawaysontop",
+      "classes": "tsd-kind-variable tsd-parent-kind-object-literal",
+      "parent": "\"lib/init_options\".initShadowWindowActionOption"
+    },
+    {
+      "id": 29,
+      "kind": 1,
+      "name": "\"lib/shadow_window_action\"",
+      "url": "modules/_lib_shadow_window_action_.html",
+      "classes": "tsd-kind-module"
+    },
+    {
+      "id": 30,
+      "kind": 256,
+      "name": "ShadowUsefulHwnds",
+      "url": "interfaces/_lib_shadow_window_action_.shadowusefulhwnds.html",
+      "classes": "tsd-kind-interface tsd-parent-kind-module",
+      "parent": "\"lib/shadow_window_action\""
+    },
+    {
+      "id": 31,
+      "kind": 1024,
+      "name": "target",
+      "url": "interfaces/_lib_shadow_window_action_.shadowusefulhwnds.html#target",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "\"lib/shadow_window_action\".ShadowUsefulHwnds"
+    },
+    {
+      "id": 32,
+      "kind": 1024,
+      "name": "progman",
+      "url": "interfaces/_lib_shadow_window_action_.shadowusefulhwnds.html#progman",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "\"lib/shadow_window_action\".ShadowUsefulHwnds"
+    },
+    {
+      "id": 33,
+      "kind": 1024,
+      "name": "frontWorker",
+      "url": "interfaces/_lib_shadow_window_action_.shadowusefulhwnds.html#frontworker",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "\"lib/shadow_window_action\".ShadowUsefulHwnds"
+    },
+    {
+      "id": 34,
+      "kind": 1024,
+      "name": "behindWorker",
+      "url": "interfaces/_lib_shadow_window_action_.shadowusefulhwnds.html#behindworker",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "\"lib/shadow_window_action\".ShadowUsefulHwnds"
+    },
+    {
+      "id": 35,
+      "kind": 1024,
+      "name": "folderView",
+      "url": "interfaces/_lib_shadow_window_action_.shadowusefulhwnds.html#folderview",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "\"lib/shadow_window_action\".ShadowUsefulHwnds"
+    },
+    {
+      "id": 36,
+      "kind": 1024,
+      "name": "desktop",
+      "url": "interfaces/_lib_shadow_window_action_.shadowusefulhwnds.html#desktop",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "\"lib/shadow_window_action\".ShadowUsefulHwnds"
+    },
+    {
+      "id": 37,
+      "kind": 256,
+      "name": "Screen",
+      "url": "interfaces/_lib_shadow_window_action_.screen.html",
+      "classes": "tsd-kind-interface tsd-parent-kind-module",
+      "parent": "\"lib/shadow_window_action\""
+    },
+    {
+      "id": 38,
+      "kind": 1024,
+      "name": "width",
+      "url": "interfaces/_lib_shadow_window_action_.screen.html#width",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "\"lib/shadow_window_action\".Screen"
+    },
+    {
+      "id": 39,
+      "kind": 1024,
+      "name": "height",
+      "url": "interfaces/_lib_shadow_window_action_.screen.html#height",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "\"lib/shadow_window_action\".Screen"
+    },
+    {
+      "id": 40,
+      "kind": 128,
+      "name": "ShadowWindowAction",
+      "url": "classes/_lib_shadow_window_action_.shadowwindowaction.html",
+      "classes": "tsd-kind-class tsd-parent-kind-module",
+      "parent": "\"lib/shadow_window_action\""
+    },
+    {
+      "id": 41,
+      "kind": 1024,
+      "name": "_progmanCls",
+      "url": "classes/_lib_shadow_window_action_.shadowwindowaction.html#_progmancls",
+      "classes": "tsd-kind-property tsd-parent-kind-class tsd-is-private",
+      "parent": "\"lib/shadow_window_action\".ShadowWindowAction"
+    },
+    {
+      "id": 42,
+      "kind": 1024,
+      "name": "_shellViewCls",
+      "url": "classes/_lib_shadow_window_action_.shadowwindowaction.html#_shellviewcls",
+      "classes": "tsd-kind-property tsd-parent-kind-class tsd-is-private",
+      "parent": "\"lib/shadow_window_action\".ShadowWindowAction"
+    },
+    {
+      "id": 43,
+      "kind": 1024,
+      "name": "_folderViewCls",
+      "url": "classes/_lib_shadow_window_action_.shadowwindowaction.html#_folderviewcls",
+      "classes": "tsd-kind-property tsd-parent-kind-class tsd-is-private",
+      "parent": "\"lib/shadow_window_action\".ShadowWindowAction"
+    },
+    {
+      "id": 44,
+      "kind": 1024,
+      "name": "_workerCls",
+      "url": "classes/_lib_shadow_window_action_.shadowwindowaction.html#_workercls",
+      "classes": "tsd-kind-property tsd-parent-kind-class tsd-is-private",
+      "parent": "\"lib/shadow_window_action\".ShadowWindowAction"
+    },
+    {
+      "id": 45,
+      "kind": 1024,
+      "name": "screen",
+      "url": "classes/_lib_shadow_window_action_.shadowwindowaction.html#screen",
+      "classes": "tsd-kind-property tsd-parent-kind-class",
+      "parent": "\"lib/shadow_window_action\".ShadowWindowAction"
+    },
+    {
+      "id": 46,
+      "kind": 1024,
+      "name": "isUnderDesktop",
+      "url": "classes/_lib_shadow_window_action_.shadowwindowaction.html#isunderdesktop",
+      "classes": "tsd-kind-property tsd-parent-kind-class",
+      "parent": "\"lib/shadow_window_action\".ShadowWindowAction"
+    },
+    {
+      "id": 47,
+      "kind": 1024,
+      "name": "hWnds",
+      "url": "classes/_lib_shadow_window_action_.shadowwindowaction.html#hwnds",
+      "classes": "tsd-kind-property tsd-parent-kind-class",
+      "parent": "\"lib/shadow_window_action\".ShadowWindowAction"
+    },
+    {
+      "id": 48,
+      "kind": 1024,
+      "name": "options",
+      "url": "classes/_lib_shadow_window_action_.shadowwindowaction.html#options",
+      "classes": "tsd-kind-property tsd-parent-kind-class",
+      "parent": "\"lib/shadow_window_action\".ShadowWindowAction"
+    },
+    {
+      "id": 49,
+      "kind": 512,
+      "name": "constructor",
+      "url": "classes/_lib_shadow_window_action_.shadowwindowaction.html#constructor",
+      "classes": "tsd-kind-constructor tsd-parent-kind-class",
+      "parent": "\"lib/shadow_window_action\".ShadowWindowAction"
+    },
+    {
+      "id": 50,
+      "kind": 262144,
+      "name": "mouse",
+      "url": "classes/_lib_shadow_window_action_.shadowwindowaction.html#mouse",
+      "classes": "tsd-kind-get-signature tsd-parent-kind-class",
+      "parent": "\"lib/shadow_window_action\".ShadowWindowAction"
+    },
+    {
+      "id": 51,
+      "kind": 2048,
+      "name": "_init",
+      "url": "classes/_lib_shadow_window_action_.shadowwindowaction.html#_init",
+      "classes": "tsd-kind-method tsd-parent-kind-class tsd-is-private",
+      "parent": "\"lib/shadow_window_action\".ShadowWindowAction"
+    },
+    {
+      "id": 52,
+      "kind": 2048,
+      "name": "_findProgmanWindow",
+      "url": "classes/_lib_shadow_window_action_.shadowwindowaction.html#_findprogmanwindow",
+      "classes": "tsd-kind-method tsd-parent-kind-class tsd-is-private",
+      "parent": "\"lib/shadow_window_action\".ShadowWindowAction"
+    },
+    {
+      "id": 53,
+      "kind": 2048,
+      "name": "_createEnumWindowProc",
+      "url": "classes/_lib_shadow_window_action_.shadowwindowaction.html#_createenumwindowproc",
+      "classes": "tsd-kind-method tsd-parent-kind-class tsd-is-private",
+      "parent": "\"lib/shadow_window_action\".ShadowWindowAction"
+    },
+    {
+      "id": 54,
+      "kind": 2048,
+      "name": "_splitWorkerAndFind",
+      "url": "classes/_lib_shadow_window_action_.shadowwindowaction.html#_splitworkerandfind",
+      "classes": "tsd-kind-method tsd-parent-kind-class tsd-is-private",
+      "parent": "\"lib/shadow_window_action\".ShadowWindowAction"
+    },
+    {
+      "id": 55,
+      "kind": 2048,
+      "name": "maximize",
+      "url": "classes/_lib_shadow_window_action_.shadowwindowaction.html#maximize",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "\"lib/shadow_window_action\".ShadowWindowAction"
+    },
+    {
+      "id": 56,
+      "kind": 2048,
+      "name": "embeddedIntoDesktop",
+      "url": "classes/_lib_shadow_window_action_.shadowwindowaction.html#embeddedwindowintobehind",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "\"lib/shadow_window_action\".ShadowWindowAction"
+    },
+    {
+      "id": 57,
+      "kind": 2048,
+      "name": "takeOutFromDesktop",
+      "url": "classes/_lib_shadow_window_action_.shadowwindowaction.html#pickoutwindowfrombehind",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "\"lib/shadow_window_action\".ShadowWindowAction"
+    },
+    {
+      "id": 58,
+      "kind": 2048,
+      "name": "setForeground",
+      "url": "classes/_lib_shadow_window_action_.shadowwindowaction.html#setforeground",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "\"lib/shadow_window_action\".ShadowWindowAction"
+    },
+    {
+      "id": 59,
+      "kind": 32,
+      "name": "FindWindowExW",
+      "url": "modules/_lib_shadow_window_action_.html#findwindowexw",
+      "classes": "tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported",
+      "parent": "\"lib/shadow_window_action\""
+    },
+    {
+      "id": 60,
+      "kind": 32,
+      "name": "GetDesktopWindow",
+      "url": "modules/_lib_shadow_window_action_.html#getdesktopwindow",
+      "classes": "tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported",
+      "parent": "\"lib/shadow_window_action\""
+    },
+    {
+      "id": 61,
+      "kind": 32,
+      "name": "SendMessageW",
+      "url": "modules/_lib_shadow_window_action_.html#sendmessagew",
+      "classes": "tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported",
+      "parent": "\"lib/shadow_window_action\""
+    },
+    {
+      "id": 62,
+      "kind": 32,
+      "name": "EnumWindows",
+      "url": "modules/_lib_shadow_window_action_.html#enumwindows",
+      "classes": "tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported",
+      "parent": "\"lib/shadow_window_action\""
+    },
+    {
+      "id": 63,
+      "kind": 32,
+      "name": "SetParent",
+      "url": "modules/_lib_shadow_window_action_.html#setparent",
+      "classes": "tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported",
+      "parent": "\"lib/shadow_window_action\""
+    },
+    {
+      "id": 64,
+      "kind": 32,
+      "name": "GetSystemMetrics",
+      "url": "modules/_lib_shadow_window_action_.html#getsystemmetrics",
+      "classes": "tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported",
+      "parent": "\"lib/shadow_window_action\""
+    },
+    {
+      "id": 65,
+      "kind": 32,
+      "name": "SetWindowPos",
+      "url": "modules/_lib_shadow_window_action_.html#setwindowpos",
+      "classes": "tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported",
+      "parent": "\"lib/shadow_window_action\""
+    },
+    {
+      "id": 66,
+      "kind": 32,
+      "name": "SetForegroundWindow",
+      "url": "modules/_lib_shadow_window_action_.html#setforegroundwindow",
+      "classes": "tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported",
+      "parent": "\"lib/shadow_window_action\""
+    },
+    {
+      "id": 67,
+      "kind": 1,
+      "name": "\"lib/events/mouse\"",
+      "url": "modules/_lib_events_mouse_.html",
+      "classes": "tsd-kind-module"
+    },
+    {
+      "id": 68,
+      "kind": 4,
+      "name": "MouseEvents",
+      "url": "enums/_lib_events_mouse_.mouseevents.html",
+      "classes": "tsd-kind-enum tsd-parent-kind-module",
+      "parent": "\"lib/events/mouse\""
+    },
+    {
+      "id": 69,
+      "kind": 16,
+      "name": "move",
+      "url": "enums/_lib_events_mouse_.mouseevents.html#move",
+      "classes": "tsd-kind-enum-member tsd-parent-kind-enum",
+      "parent": "\"lib/events/mouse\".MouseEvents"
+    },
+    {
+      "id": 70,
+      "kind": 16,
+      "name": "click",
+      "url": "enums/_lib_events_mouse_.mouseevents.html#click",
+      "classes": "tsd-kind-enum-member tsd-parent-kind-enum",
+      "parent": "\"lib/events/mouse\".MouseEvents"
+    },
+    {
+      "id": 71,
+      "kind": 16,
+      "name": "clickSpecifiedCount",
+      "url": "enums/_lib_events_mouse_.mouseevents.html#clickspecifiedcount",
+      "classes": "tsd-kind-enum-member tsd-parent-kind-enum",
+      "parent": "\"lib/events/mouse\".MouseEvents"
+    },
+    {
+      "id": 72,
+      "kind": 16,
+      "name": "down",
+      "url": "enums/_lib_events_mouse_.mouseevents.html#down",
+      "classes": "tsd-kind-enum-member tsd-parent-kind-enum",
+      "parent": "\"lib/events/mouse\".MouseEvents"
+    },
+    {
+      "id": 73,
+      "kind": 16,
+      "name": "up",
+      "url": "enums/_lib_events_mouse_.mouseevents.html#up",
+      "classes": "tsd-kind-enum-member tsd-parent-kind-enum",
+      "parent": "\"lib/events/mouse\".MouseEvents"
+    },
+    {
+      "id": 74,
+      "kind": 16,
+      "name": "mouseInvisible",
+      "url": "enums/_lib_events_mouse_.mouseevents.html#mouseinvisible",
+      "classes": "tsd-kind-enum-member tsd-parent-kind-enum",
+      "parent": "\"lib/events/mouse\".MouseEvents"
+    },
+    {
+      "id": 75,
+      "kind": 16,
+      "name": "desktop",
+      "url": "enums/_lib_events_mouse_.mouseevents.html#desktop",
+      "classes": "tsd-kind-enum-member tsd-parent-kind-enum",
+      "parent": "\"lib/events/mouse\".MouseEvents"
+    },
+    {
+      "id": 76,
+      "kind": 256,
+      "name": "MouseBasicEvent",
+      "url": "interfaces/_lib_events_mouse_.mousebasicevent.html",
+      "classes": "tsd-kind-interface tsd-parent-kind-module tsd-is-not-exported",
+      "parent": "\"lib/events/mouse\""
+    },
+    {
+      "id": 77,
+      "kind": 1024,
+      "name": "x",
+      "url": "interfaces/_lib_events_mouse_.mousebasicevent.html#x",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported",
+      "parent": "\"lib/events/mouse\".MouseBasicEvent"
+    },
+    {
+      "id": 78,
+      "kind": 1024,
+      "name": "y",
+      "url": "interfaces/_lib_events_mouse_.mousebasicevent.html#y",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported",
+      "parent": "\"lib/events/mouse\".MouseBasicEvent"
+    },
+    {
+      "id": 79,
+      "kind": 1024,
+      "name": "window",
+      "url": "interfaces/_lib_events_mouse_.mousebasicevent.html#window",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported",
+      "parent": "\"lib/events/mouse\".MouseBasicEvent"
+    },
+    {
+      "id": 80,
+      "kind": 1024,
+      "name": "hWndFromPoint",
+      "url": "interfaces/_lib_events_mouse_.mousebasicevent.html#hwndfrompoint",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-not-exported",
+      "parent": "\"lib/events/mouse\".MouseBasicEvent"
+    },
+    {
+      "id": 81,
+      "kind": 256,
+      "name": "MouseMove",
+      "url": "interfaces/_lib_events_mouse_.mousemove.html",
+      "classes": "tsd-kind-interface tsd-parent-kind-module",
+      "parent": "\"lib/events/mouse\""
+    },
+    {
+      "id": 82,
+      "kind": 1024,
+      "name": "hWndFromPoint",
+      "url": "interfaces/_lib_events_mouse_.mousemove.html#hwndfrompoint",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-overwrite",
+      "parent": "\"lib/events/mouse\".MouseMove"
+    },
+    {
+      "id": 83,
+      "kind": 1024,
+      "name": "x",
+      "url": "interfaces/_lib_events_mouse_.mousemove.html#x",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseMove"
+    },
+    {
+      "id": 84,
+      "kind": 1024,
+      "name": "y",
+      "url": "interfaces/_lib_events_mouse_.mousemove.html#y",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseMove"
+    },
+    {
+      "id": 85,
+      "kind": 1024,
+      "name": "window",
+      "url": "interfaces/_lib_events_mouse_.mousemove.html#window",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseMove"
+    },
+    {
+      "id": 86,
+      "kind": 256,
+      "name": "MouseClickEvent",
+      "url": "interfaces/_lib_events_mouse_.mouseclickevent.html",
+      "classes": "tsd-kind-interface tsd-parent-kind-module",
+      "parent": "\"lib/events/mouse\""
+    },
+    {
+      "id": 87,
+      "kind": 1024,
+      "name": "count",
+      "url": "interfaces/_lib_events_mouse_.mouseclickevent.html#count",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "\"lib/events/mouse\".MouseClickEvent"
+    },
+    {
+      "id": 88,
+      "kind": 1024,
+      "name": "x",
+      "url": "interfaces/_lib_events_mouse_.mouseclickevent.html#x",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseClickEvent"
+    },
+    {
+      "id": 89,
+      "kind": 1024,
+      "name": "y",
+      "url": "interfaces/_lib_events_mouse_.mouseclickevent.html#y",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseClickEvent"
+    },
+    {
+      "id": 90,
+      "kind": 1024,
+      "name": "window",
+      "url": "interfaces/_lib_events_mouse_.mouseclickevent.html#window",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseClickEvent"
+    },
+    {
+      "id": 91,
+      "kind": 1024,
+      "name": "hWndFromPoint",
+      "url": "interfaces/_lib_events_mouse_.mouseclickevent.html#hwndfrompoint",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseClickEvent"
+    },
+    {
+      "id": 92,
+      "kind": 256,
+      "name": "MouseClickSpecifiedCount",
+      "url": "interfaces/_lib_events_mouse_.mouseclickspecifiedcount.html",
+      "classes": "tsd-kind-interface tsd-parent-kind-module",
+      "parent": "\"lib/events/mouse\""
+    },
+    {
+      "id": 93,
+      "kind": 1024,
+      "name": "x",
+      "url": "interfaces/_lib_events_mouse_.mouseclickspecifiedcount.html#x",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseClickSpecifiedCount"
+    },
+    {
+      "id": 94,
+      "kind": 1024,
+      "name": "y",
+      "url": "interfaces/_lib_events_mouse_.mouseclickspecifiedcount.html#y",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseClickSpecifiedCount"
+    },
+    {
+      "id": 95,
+      "kind": 1024,
+      "name": "window",
+      "url": "interfaces/_lib_events_mouse_.mouseclickspecifiedcount.html#window",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseClickSpecifiedCount"
+    },
+    {
+      "id": 96,
+      "kind": 1024,
+      "name": "hWndFromPoint",
+      "url": "interfaces/_lib_events_mouse_.mouseclickspecifiedcount.html#hwndfrompoint",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseClickSpecifiedCount"
+    },
+    {
+      "id": 97,
+      "kind": 256,
+      "name": "MouseDown",
+      "url": "interfaces/_lib_events_mouse_.mousedown.html",
+      "classes": "tsd-kind-interface tsd-parent-kind-module",
+      "parent": "\"lib/events/mouse\""
+    },
+    {
+      "id": 98,
+      "kind": 1024,
+      "name": "left",
+      "url": "interfaces/_lib_events_mouse_.mousedown.html#left",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "\"lib/events/mouse\".MouseDown"
+    },
+    {
+      "id": 99,
+      "kind": 1024,
+      "name": "right",
+      "url": "interfaces/_lib_events_mouse_.mousedown.html#right",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "\"lib/events/mouse\".MouseDown"
+    },
+    {
+      "id": 100,
+      "kind": 1024,
+      "name": "x",
+      "url": "interfaces/_lib_events_mouse_.mousedown.html#x",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseDown"
+    },
+    {
+      "id": 101,
+      "kind": 1024,
+      "name": "y",
+      "url": "interfaces/_lib_events_mouse_.mousedown.html#y",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseDown"
+    },
+    {
+      "id": 102,
+      "kind": 1024,
+      "name": "window",
+      "url": "interfaces/_lib_events_mouse_.mousedown.html#window",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseDown"
+    },
+    {
+      "id": 103,
+      "kind": 1024,
+      "name": "hWndFromPoint",
+      "url": "interfaces/_lib_events_mouse_.mousedown.html#hwndfrompoint",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseDown"
+    },
+    {
+      "id": 104,
+      "kind": 256,
+      "name": "MouseUp",
+      "url": "interfaces/_lib_events_mouse_.mouseup.html",
+      "classes": "tsd-kind-interface tsd-parent-kind-module",
+      "parent": "\"lib/events/mouse\""
+    },
+    {
+      "id": 105,
+      "kind": 1024,
+      "name": "left",
+      "url": "interfaces/_lib_events_mouse_.mouseup.html#left",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "\"lib/events/mouse\".MouseUp"
+    },
+    {
+      "id": 106,
+      "kind": 1024,
+      "name": "right",
+      "url": "interfaces/_lib_events_mouse_.mouseup.html#right",
+      "classes": "tsd-kind-property tsd-parent-kind-interface",
+      "parent": "\"lib/events/mouse\".MouseUp"
+    },
+    {
+      "id": 107,
+      "kind": 1024,
+      "name": "x",
+      "url": "interfaces/_lib_events_mouse_.mouseup.html#x",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseUp"
+    },
+    {
+      "id": 108,
+      "kind": 1024,
+      "name": "y",
+      "url": "interfaces/_lib_events_mouse_.mouseup.html#y",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseUp"
+    },
+    {
+      "id": 109,
+      "kind": 1024,
+      "name": "window",
+      "url": "interfaces/_lib_events_mouse_.mouseup.html#window",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseUp"
+    },
+    {
+      "id": 110,
+      "kind": 1024,
+      "name": "hWndFromPoint",
+      "url": "interfaces/_lib_events_mouse_.mouseup.html#hwndfrompoint",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseUp"
+    },
+    {
+      "id": 111,
+      "kind": 256,
+      "name": "MouseInvisible",
+      "url": "interfaces/_lib_events_mouse_.mouseinvisible.html",
+      "classes": "tsd-kind-interface tsd-parent-kind-module",
+      "parent": "\"lib/events/mouse\""
+    },
+    {
+      "id": 112,
+      "kind": 1024,
+      "name": "x",
+      "url": "interfaces/_lib_events_mouse_.mouseinvisible.html#x",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseInvisible"
+    },
+    {
+      "id": 113,
+      "kind": 1024,
+      "name": "y",
+      "url": "interfaces/_lib_events_mouse_.mouseinvisible.html#y",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseInvisible"
+    },
+    {
+      "id": 114,
+      "kind": 1024,
+      "name": "window",
+      "url": "interfaces/_lib_events_mouse_.mouseinvisible.html#window",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseInvisible"
+    },
+    {
+      "id": 115,
+      "kind": 1024,
+      "name": "hWndFromPoint",
+      "url": "interfaces/_lib_events_mouse_.mouseinvisible.html#hwndfrompoint",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseInvisible"
+    },
+    {
+      "id": 116,
+      "kind": 256,
+      "name": "MouseDesktop",
+      "url": "interfaces/_lib_events_mouse_.mousedesktop.html",
+      "classes": "tsd-kind-interface tsd-parent-kind-module",
+      "parent": "\"lib/events/mouse\""
+    },
+    {
+      "id": 117,
+      "kind": 1024,
+      "name": "x",
+      "url": "interfaces/_lib_events_mouse_.mousedesktop.html#x",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseDesktop"
+    },
+    {
+      "id": 118,
+      "kind": 1024,
+      "name": "y",
+      "url": "interfaces/_lib_events_mouse_.mousedesktop.html#y",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseDesktop"
+    },
+    {
+      "id": 119,
+      "kind": 1024,
+      "name": "window",
+      "url": "interfaces/_lib_events_mouse_.mousedesktop.html#window",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseDesktop"
+    },
+    {
+      "id": 120,
+      "kind": 1024,
+      "name": "hWndFromPoint",
+      "url": "interfaces/_lib_events_mouse_.mousedesktop.html#hwndfrompoint",
+      "classes": "tsd-kind-property tsd-parent-kind-interface tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".MouseDesktop"
+    },
+    {
+      "id": 121,
+      "kind": 128,
+      "name": "ShadowMouse",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html",
+      "classes": "tsd-kind-class tsd-parent-kind-module",
+      "parent": "\"lib/events/mouse\""
+    },
+    {
+      "id": 122,
+      "kind": 1024,
+      "name": "_hWnds",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#_hwnds",
+      "classes": "tsd-kind-property tsd-parent-kind-class tsd-is-private",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 123,
+      "kind": 1024,
+      "name": "_window",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#_window",
+      "classes": "tsd-kind-property tsd-parent-kind-class tsd-is-private",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 124,
+      "kind": 1024,
+      "name": "_trigger",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#_trigger",
+      "classes": "tsd-kind-property tsd-parent-kind-class tsd-is-private",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 125,
+      "kind": 1024,
+      "name": "_clickCount",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#_clickcount",
+      "classes": "tsd-kind-property tsd-parent-kind-class tsd-is-private",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 126,
+      "kind": 1024,
+      "name": "_lastClickTime",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#_lastclicktime",
+      "classes": "tsd-kind-property tsd-parent-kind-class tsd-is-private",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 127,
+      "kind": 1024,
+      "name": "_options",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#_options",
+      "classes": "tsd-kind-property tsd-parent-kind-class",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 128,
+      "kind": 1024,
+      "name": "_mouseHook",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#_mousehook",
+      "classes": "tsd-kind-property tsd-parent-kind-class",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 129,
+      "kind": 1024,
+      "name": "_interactive",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#_interactive",
+      "classes": "tsd-kind-property tsd-parent-kind-class tsd-is-private",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 130,
+      "kind": 512,
+      "name": "constructor",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#constructor",
+      "classes": "tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 131,
+      "kind": 2048,
+      "name": "mount",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#mount",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 132,
+      "kind": 2048,
+      "name": "unmount",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#unmount",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 133,
+      "kind": 2048,
+      "name": "_setMouseHook",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#_setmousehook",
+      "classes": "tsd-kind-method tsd-parent-kind-class tsd-is-private",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 134,
+      "kind": 2048,
+      "name": "_createMouseThreadProc",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#_createmousethreadproc",
+      "classes": "tsd-kind-method tsd-parent-kind-class tsd-is-private",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 135,
+      "kind": 2048,
+      "name": "setInteractive",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#setinteractive",
+      "classes": "tsd-kind-method tsd-parent-kind-class",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 136,
+      "kind": 2048,
+      "name": "_createMouseHookProc",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#_createmousehookproc",
+      "classes": "tsd-kind-method tsd-parent-kind-class tsd-is-private",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 137,
+      "kind": 2048,
+      "name": "addListener",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#addlistener",
+      "classes": "tsd-kind-method tsd-parent-kind-class tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 138,
+      "kind": 2048,
+      "name": "on",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#on",
+      "classes": "tsd-kind-method tsd-parent-kind-class tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 139,
+      "kind": 2048,
+      "name": "once",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#once",
+      "classes": "tsd-kind-method tsd-parent-kind-class tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 140,
+      "kind": 2048,
+      "name": "removeListener",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#removelistener",
+      "classes": "tsd-kind-method tsd-parent-kind-class tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 141,
+      "kind": 2048,
+      "name": "off",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#off",
+      "classes": "tsd-kind-method tsd-parent-kind-class tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 142,
+      "kind": 2048,
+      "name": "removeAllListeners",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#removealllisteners",
+      "classes": "tsd-kind-method tsd-parent-kind-class tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 143,
+      "kind": 2048,
+      "name": "setMaxListeners",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#setmaxlisteners",
+      "classes": "tsd-kind-method tsd-parent-kind-class tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 144,
+      "kind": 2048,
+      "name": "getMaxListeners",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#getmaxlisteners",
+      "classes": "tsd-kind-method tsd-parent-kind-class tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 145,
+      "kind": 2048,
+      "name": "listeners",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#listeners",
+      "classes": "tsd-kind-method tsd-parent-kind-class tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 146,
+      "kind": 2048,
+      "name": "rawListeners",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#rawlisteners",
+      "classes": "tsd-kind-method tsd-parent-kind-class tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 147,
+      "kind": 2048,
+      "name": "emit",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#emit",
+      "classes": "tsd-kind-method tsd-parent-kind-class tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 148,
+      "kind": 2048,
+      "name": "listenerCount",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#listenercount",
+      "classes": "tsd-kind-method tsd-parent-kind-class tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 149,
+      "kind": 2048,
+      "name": "prependListener",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#prependlistener",
+      "classes": "tsd-kind-method tsd-parent-kind-class tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 150,
+      "kind": 2048,
+      "name": "prependOnceListener",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#prependoncelistener",
+      "classes": "tsd-kind-method tsd-parent-kind-class tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 151,
+      "kind": 2048,
+      "name": "eventNames",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#eventnames",
+      "classes": "tsd-kind-method tsd-parent-kind-class tsd-is-inherited",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 152,
+      "kind": 2048,
+      "name": "listenerCount",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#listenercount-1",
+      "classes": "tsd-kind-method tsd-parent-kind-class tsd-is-inherited tsd-is-static",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 153,
+      "kind": 1024,
+      "name": "defaultMaxListeners",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#defaultmaxlisteners",
+      "classes": "tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 154,
+      "kind": 1024,
+      "name": "errorMonitor",
+      "url": "classes/_lib_events_mouse_.shadowmouse.html#errormonitor",
+      "classes": "tsd-kind-property tsd-parent-kind-class tsd-is-inherited tsd-is-static",
+      "parent": "\"lib/events/mouse\".ShadowMouse"
+    },
+    {
+      "id": 155,
+      "kind": 32,
+      "name": "EventEmitter",
+      "url": "modules/_lib_events_mouse_.html#eventemitter",
+      "classes": "tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported",
+      "parent": "\"lib/events/mouse\""
+    },
+    {
+      "id": 156,
+      "kind": 32,
+      "name": "TranslateMessage",
+      "url": "modules/_lib_events_mouse_.html#translatemessage",
+      "classes": "tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported",
+      "parent": "\"lib/events/mouse\""
+    },
+    {
+      "id": 157,
+      "kind": 32,
+      "name": "SetWindowsHookExW",
+      "url": "modules/_lib_events_mouse_.html#setwindowshookexw",
+      "classes": "tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported",
+      "parent": "\"lib/events/mouse\""
+    },
+    {
+      "id": 158,
+      "kind": 32,
+      "name": "DispatchMessage",
+      "url": "modules/_lib_events_mouse_.html#dispatchmessage",
+      "classes": "tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported",
+      "parent": "\"lib/events/mouse\""
+    },
+    {
+      "id": 159,
+      "kind": 32,
+      "name": "GetMessageW",
+      "url": "modules/_lib_events_mouse_.html#getmessagew",
+      "classes": "tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported",
+      "parent": "\"lib/events/mouse\""
+    },
+    {
+      "id": 160,
+      "kind": 32,
+      "name": "WindowFromPoint",
+      "url": "modules/_lib_events_mouse_.html#windowfrompoint",
+      "classes": "tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported",
+      "parent": "\"lib/events/mouse\""
+    },
+    {
+      "id": 161,
+      "kind": 32,
+      "name": "GetTickCount",
+      "url": "modules/_lib_events_mouse_.html#gettickcount",
+      "classes": "tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported",
+      "parent": "\"lib/events/mouse\""
+    },
+    {
+      "id": 162,
+      "kind": 32,
+      "name": "CallNextHookEx",
+      "url": "modules/_lib_events_mouse_.html#callnexthookex",
+      "classes": "tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported",
+      "parent": "\"lib/events/mouse\""
+    },
+    {
+      "id": 163,
+      "kind": 32,
+      "name": "CreateThread",
+      "url": "modules/_lib_events_mouse_.html#createthread",
+      "classes": "tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported",
+      "parent": "\"lib/events/mouse\""
+    },
+    {
+      "id": 164,
+      "kind": 32,
+      "name": "UnhookWindowsHookEx",
+      "url": "modules/_lib_events_mouse_.html#unhookwindowshookex",
+      "classes": "tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported",
+      "parent": "\"lib/events/mouse\""
+    },
+    {
+      "id": 165,
+      "kind": 32,
+      "name": "SendMessageW",
+      "url": "modules/_lib_events_mouse_.html#sendmessagew",
+      "classes": "tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported",
+      "parent": "\"lib/events/mouse\""
+    },
+    {
+      "id": 166,
+      "kind": 32,
+      "name": "MAKEWPARAM",
+      "url": "modules/_lib_events_mouse_.html#makewparam",
+      "classes": "tsd-kind-variable tsd-parent-kind-module tsd-is-not-exported",
+      "parent": "\"lib/events/mouse\""
+    }
+  ],
+  "index": {
+    "version": "2.3.8",
+    "fields": [
+      "name",
+      "parent"
+    ],
+    "fieldVectors": [
+      [
+        "name/0",
+        [
+          0,
+          29.839
+        ]
+      ],
+      [
+        "parent/0",
+        []
+      ],
+      [
+        "name/1",
+        [
+          1,
+          47.185
+        ]
+      ],
+      [
+        "parent/1",
+        [
+          0,
+          2.962
+        ]
+      ],
+      [
+        "name/2",
+        [
+          2,
+          38.712
+        ]
+      ],
+      [
+        "parent/2",
+        [
+          3,
+          3.593
+        ]
+      ],
+      [
+        "name/3",
+        [
+          4,
+          38.712
+        ]
+      ],
+      [
+        "parent/3",
+        [
+          3,
+          3.593
+        ]
+      ],
+      [
+        "name/4",
+        [
+          5,
+          38.712
+        ]
+      ],
+      [
+        "parent/4",
+        [
+          3,
+          3.593
+        ]
+      ],
+      [
+        "name/5",
+        [
+          6,
+          38.712
+        ]
+      ],
+      [
+        "parent/5",
+        [
+          3,
+          3.593
+        ]
+      ],
+      [
+        "name/6",
+        [
+          7,
+          47.185
+        ]
+      ],
+      [
+        "parent/6",
+        [
+          0,
+          2.962
+        ]
+      ],
+      [
+        "name/7",
+        [
+          8,
+          38.712
+        ]
+      ],
+      [
+        "parent/7",
+        [
+          9,
+          4.683
+        ]
+      ],
+      [
+        "name/8",
+        [
+          10,
+          47.185
+        ]
+      ],
+      [
+        "parent/8",
+        [
+          0,
+          2.962
+        ]
+      ],
+      [
+        "name/9",
+        [
+          11,
+          42.077
+        ]
+      ],
+      [
+        "parent/9",
+        [
+          12,
+          3.842
+        ]
+      ],
+      [
+        "name/10",
+        [
+          13,
+          38.712
+        ]
+      ],
+      [
+        "parent/10",
+        [
+          12,
+          3.842
+        ]
+      ],
+      [
+        "name/11",
+        [
+          14,
+          42.077
+        ]
+      ],
+      [
+        "parent/11",
+        [
+          12,
+          3.842
+        ]
+      ],
+      [
+        "name/12",
+        [
+          15,
+          47.185
+        ]
+      ],
+      [
+        "parent/12",
+        [
+          0,
+          2.962
+        ]
+      ],
+      [
+        "name/13",
+        [
+          16,
+          47.185
+        ]
+      ],
+      [
+        "parent/13",
+        [
+          0,
+          2.962
+        ]
+      ],
+      [
+        "name/14",
+        [
+          2,
+          38.712
+        ]
+      ],
+      [
+        "parent/14",
+        [
+          17,
+          3.593
+        ]
+      ],
+      [
+        "name/15",
+        [
+          4,
+          38.712
+        ]
+      ],
+      [
+        "parent/15",
+        [
+          17,
+          3.593
+        ]
+      ],
+      [
+        "name/16",
+        [
+          5,
+          38.712
+        ]
+      ],
+      [
+        "parent/16",
+        [
+          17,
+          3.593
+        ]
+      ],
+      [
+        "name/17",
+        [
+          6,
+          38.712
+        ]
+      ],
+      [
+        "parent/17",
+        [
+          17,
+          3.593
+        ]
+      ],
+      [
+        "name/18",
+        [
+          18,
+          47.185
+        ]
+      ],
+      [
+        "parent/18",
+        [
+          0,
+          2.962
+        ]
+      ],
+      [
+        "name/19",
+        [
+          8,
+          38.712
+        ]
+      ],
+      [
+        "parent/19",
+        [
+          19,
+          4.683
+        ]
+      ],
+      [
+        "name/20",
+        [
+          20,
+          47.185
+        ]
+      ],
+      [
+        "parent/20",
+        [
+          0,
+          2.962
+        ]
+      ],
+      [
+        "name/21",
+        [
+          11,
+          42.077
+        ]
+      ],
+      [
+        "parent/21",
+        [
+          21,
+          3.842
+        ]
+      ],
+      [
+        "name/22",
+        [
+          13,
+          38.712
+        ]
+      ],
+      [
+        "parent/22",
+        [
+          21,
+          3.842
+        ]
+      ],
+      [
+        "name/23",
+        [
+          22,
+          47.185
+        ]
+      ],
+      [
+        "parent/23",
+        [
+          23,
+          4.683
+        ]
+      ],
+      [
+        "name/24",
+        [
+          2,
+          38.712
+        ]
+      ],
+      [
+        "parent/24",
+        [
+          24,
+          3.593
+        ]
+      ],
+      [
+        "name/25",
+        [
+          4,
+          38.712
+        ]
+      ],
+      [
+        "parent/25",
+        [
+          24,
+          3.593
+        ]
+      ],
+      [
+        "name/26",
+        [
+          5,
+          38.712
+        ]
+      ],
+      [
+        "parent/26",
+        [
+          24,
+          3.593
+        ]
+      ],
+      [
+        "name/27",
+        [
+          6,
+          38.712
+        ]
+      ],
+      [
+        "parent/27",
+        [
+          24,
+          3.593
+        ]
+      ],
+      [
+        "name/28",
+        [
+          14,
+          42.077
+        ]
+      ],
+      [
+        "parent/28",
+        [
+          21,
+          3.842
+        ]
+      ],
+      [
+        "name/29",
+        [
+          25,
+          25.982
+        ]
+      ],
+      [
+        "parent/29",
+        []
+      ],
+      [
+        "name/30",
+        [
+          26,
+          47.185
+        ]
+      ],
+      [
+        "parent/30",
+        [
+          25,
+          2.579
+        ]
+      ],
+      [
+        "name/31",
+        [
+          27,
+          47.185
+        ]
+      ],
+      [
+        "parent/31",
+        [
+          28,
+          3.228
+        ]
+      ],
+      [
+        "name/32",
+        [
+          29,
+          47.185
+        ]
+      ],
+      [
+        "parent/32",
+        [
+          28,
+          3.228
+        ]
+      ],
+      [
+        "name/33",
+        [
+          30,
+          47.185
+        ]
+      ],
+      [
+        "parent/33",
+        [
+          28,
+          3.228
+        ]
+      ],
+      [
+        "name/34",
+        [
+          31,
+          47.185
+        ]
+      ],
+      [
+        "parent/34",
+        [
+          28,
+          3.228
+        ]
+      ],
+      [
+        "name/35",
+        [
+          32,
+          47.185
+        ]
+      ],
+      [
+        "parent/35",
+        [
+          28,
+          3.228
+        ]
+      ],
+      [
+        "name/36",
+        [
+          33,
+          42.077
+        ]
+      ],
+      [
+        "parent/36",
+        [
+          28,
+          3.228
+        ]
+      ],
+      [
+        "name/37",
+        [
+          34,
+          42.077
+        ]
+      ],
+      [
+        "parent/37",
+        [
+          25,
+          2.579
+        ]
+      ],
+      [
+        "name/38",
+        [
+          35,
+          47.185
+        ]
+      ],
+      [
+        "parent/38",
+        [
+          36,
+          4.176
+        ]
+      ],
+      [
+        "name/39",
+        [
+          37,
+          47.185
+        ]
+      ],
+      [
+        "parent/39",
+        [
+          36,
+          4.176
+        ]
+      ],
+      [
+        "name/40",
+        [
+          38,
+          47.185
+        ]
+      ],
+      [
+        "parent/40",
+        [
+          25,
+          2.579
+        ]
+      ],
+      [
+        "name/41",
+        [
+          39,
+          47.185
+        ]
+      ],
+      [
+        "parent/41",
+        [
+          40,
+          2.19
+        ]
+      ],
+      [
+        "name/42",
+        [
+          41,
+          47.185
+        ]
+      ],
+      [
+        "parent/42",
+        [
+          40,
+          2.19
+        ]
+      ],
+      [
+        "name/43",
+        [
+          42,
+          47.185
+        ]
+      ],
+      [
+        "parent/43",
+        [
+          40,
+          2.19
+        ]
+      ],
+      [
+        "name/44",
+        [
+          43,
+          47.185
+        ]
+      ],
+      [
+        "parent/44",
+        [
+          40,
+          2.19
+        ]
+      ],
+      [
+        "name/45",
+        [
+          34,
+          42.077
+        ]
+      ],
+      [
+        "parent/45",
+        [
+          40,
+          2.19
+        ]
+      ],
+      [
+        "name/46",
+        [
+          44,
+          47.185
+        ]
+      ],
+      [
+        "parent/46",
+        [
+          40,
+          2.19
+        ]
+      ],
+      [
+        "name/47",
+        [
+          45,
+          47.185
+        ]
+      ],
+      [
+        "parent/47",
+        [
+          40,
+          2.19
+        ]
+      ],
+      [
+        "name/48",
+        [
+          46,
+          47.185
+        ]
+      ],
+      [
+        "parent/48",
+        [
+          40,
+          2.19
+        ]
+      ],
+      [
+        "name/49",
+        [
+          47,
+          42.077
+        ]
+      ],
+      [
+        "parent/49",
+        [
+          40,
+          2.19
+        ]
+      ],
+      [
+        "name/50",
+        [
+          13,
+          38.712
+        ]
+      ],
+      [
+        "parent/50",
+        [
+          40,
+          2.19
+        ]
+      ],
+      [
+        "name/51",
+        [
+          48,
+          47.185
+        ]
+      ],
+      [
+        "parent/51",
+        [
+          40,
+          2.19
+        ]
+      ],
+      [
+        "name/52",
+        [
+          49,
+          47.185
+        ]
+      ],
+      [
+        "parent/52",
+        [
+          40,
+          2.19
+        ]
+      ],
+      [
+        "name/53",
+        [
+          50,
+          47.185
+        ]
+      ],
+      [
+        "parent/53",
+        [
+          40,
+          2.19
+        ]
+      ],
+      [
+        "name/54",
+        [
+          51,
+          47.185
+        ]
+      ],
+      [
+        "parent/54",
+        [
+          40,
+          2.19
+        ]
+      ],
+      [
+        "name/55",
+        [
+          8,
+          38.712
+        ]
+      ],
+      [
+        "parent/55",
+        [
+          40,
+          2.19
+        ]
+      ],
+      [
+        "name/56",
+        [
+          52,
+          47.185
+        ]
+      ],
+      [
+        "parent/56",
+        [
+          40,
+          2.19
+        ]
+      ],
+      [
+        "name/57",
+        [
+          53,
+          47.185
+        ]
+      ],
+      [
+        "parent/57",
+        [
+          40,
+          2.19
+        ]
+      ],
+      [
+        "name/58",
+        [
+          54,
+          47.185
+        ]
+      ],
+      [
+        "parent/58",
+        [
+          40,
+          2.19
+        ]
+      ],
+      [
+        "name/59",
+        [
+          55,
+          47.185
+        ]
+      ],
+      [
+        "parent/59",
+        [
+          25,
+          2.579
+        ]
+      ],
+      [
+        "name/60",
+        [
+          56,
+          47.185
+        ]
+      ],
+      [
+        "parent/60",
+        [
+          25,
+          2.579
+        ]
+      ],
+      [
+        "name/61",
+        [
+          57,
+          42.077
+        ]
+      ],
+      [
+        "parent/61",
+        [
+          25,
+          2.579
+        ]
+      ],
+      [
+        "name/62",
+        [
+          58,
+          47.185
+        ]
+      ],
+      [
+        "parent/62",
+        [
+          25,
+          2.579
+        ]
+      ],
+      [
+        "name/63",
+        [
+          59,
+          47.185
+        ]
+      ],
+      [
+        "parent/63",
+        [
+          25,
+          2.579
+        ]
+      ],
+      [
+        "name/64",
+        [
+          60,
+          47.185
+        ]
+      ],
+      [
+        "parent/64",
+        [
+          25,
+          2.579
+        ]
+      ],
+      [
+        "name/65",
+        [
+          61,
+          47.185
+        ]
+      ],
+      [
+        "parent/65",
+        [
+          25,
+          2.579
+        ]
+      ],
+      [
+        "name/66",
+        [
+          62,
+          47.185
+        ]
+      ],
+      [
+        "parent/66",
+        [
+          25,
+          2.579
+        ]
+      ],
+      [
+        "name/67",
+        [
+          63,
+          19.67
+        ]
+      ],
+      [
+        "parent/67",
+        []
+      ],
+      [
+        "name/68",
+        [
+          64,
+          47.185
+        ]
+      ],
+      [
+        "parent/68",
+        [
+          63,
+          1.952
+        ]
+      ],
+      [
+        "name/69",
+        [
+          65,
+          47.185
+        ]
+      ],
+      [
+        "parent/69",
+        [
+          66,
+          3.086
+        ]
+      ],
+      [
+        "name/70",
+        [
+          67,
+          47.185
+        ]
+      ],
+      [
+        "parent/70",
+        [
+          66,
+          3.086
+        ]
+      ],
+      [
+        "name/71",
+        [
+          68,
+          47.185
+        ]
+      ],
+      [
+        "parent/71",
+        [
+          66,
+          3.086
+        ]
+      ],
+      [
+        "name/72",
+        [
+          69,
+          47.185
+        ]
+      ],
+      [
+        "parent/72",
+        [
+          66,
+          3.086
+        ]
+      ],
+      [
+        "name/73",
+        [
+          70,
+          47.185
+        ]
+      ],
+      [
+        "parent/73",
+        [
+          66,
+          3.086
+        ]
+      ],
+      [
+        "name/74",
+        [
+          71,
+          42.077
+        ]
+      ],
+      [
+        "parent/74",
+        [
+          66,
+          3.086
+        ]
+      ],
+      [
+        "name/75",
+        [
+          33,
+          42.077
+        ]
+      ],
+      [
+        "parent/75",
+        [
+          66,
+          3.086
+        ]
+      ],
+      [
+        "name/76",
+        [
+          72,
+          47.185
+        ]
+      ],
+      [
+        "parent/76",
+        [
+          63,
+          1.952
+        ]
+      ],
+      [
+        "name/77",
+        [
+          73,
+          29.839
+        ]
+      ],
+      [
+        "parent/77",
+        [
+          74,
+          3.593
+        ]
+      ],
+      [
+        "name/78",
+        [
+          75,
+          29.839
+        ]
+      ],
+      [
+        "parent/78",
+        [
+          74,
+          3.593
+        ]
+      ],
+      [
+        "name/79",
+        [
+          76,
+          29.839
+        ]
+      ],
+      [
+        "parent/79",
+        [
+          74,
+          3.593
+        ]
+      ],
+      [
+        "name/80",
+        [
+          77,
+          29.839
+        ]
+      ],
+      [
+        "parent/80",
+        [
+          74,
+          3.593
+        ]
+      ],
+      [
+        "name/81",
+        [
+          78,
+          47.185
+        ]
+      ],
+      [
+        "parent/81",
+        [
+          63,
+          1.952
+        ]
+      ],
+      [
+        "name/82",
+        [
+          77,
+          29.839
+        ]
+      ],
+      [
+        "parent/82",
+        [
+          79,
+          3.593
+        ]
+      ],
+      [
+        "name/83",
+        [
+          73,
+          29.839
+        ]
+      ],
+      [
+        "parent/83",
+        [
+          79,
+          3.593
+        ]
+      ],
+      [
+        "name/84",
+        [
+          75,
+          29.839
+        ]
+      ],
+      [
+        "parent/84",
+        [
+          79,
+          3.593
+        ]
+      ],
+      [
+        "name/85",
+        [
+          76,
+          29.839
+        ]
+      ],
+      [
+        "parent/85",
+        [
+          79,
+          3.593
+        ]
+      ],
+      [
+        "name/86",
+        [
+          80,
+          47.185
+        ]
+      ],
+      [
+        "parent/86",
+        [
+          63,
+          1.952
+        ]
+      ],
+      [
+        "name/87",
+        [
+          81,
+          47.185
+        ]
+      ],
+      [
+        "parent/87",
+        [
+          82,
+          3.394
+        ]
+      ],
+      [
+        "name/88",
+        [
+          73,
+          29.839
+        ]
+      ],
+      [
+        "parent/88",
+        [
+          82,
+          3.394
+        ]
+      ],
+      [
+        "name/89",
+        [
+          75,
+          29.839
+        ]
+      ],
+      [
+        "parent/89",
+        [
+          82,
+          3.394
+        ]
+      ],
+      [
+        "name/90",
+        [
+          76,
+          29.839
+        ]
+      ],
+      [
+        "parent/90",
+        [
+          82,
+          3.394
+        ]
+      ],
+      [
+        "name/91",
+        [
+          77,
+          29.839
+        ]
+      ],
+      [
+        "parent/91",
+        [
+          82,
+          3.394
+        ]
+      ],
+      [
+        "name/92",
+        [
+          83,
+          47.185
+        ]
+      ],
+      [
+        "parent/92",
+        [
+          63,
+          1.952
+        ]
+      ],
+      [
+        "name/93",
+        [
+          73,
+          29.839
+        ]
+      ],
+      [
+        "parent/93",
+        [
+          84,
+          3.593
+        ]
+      ],
+      [
+        "name/94",
+        [
+          75,
+          29.839
+        ]
+      ],
+      [
+        "parent/94",
+        [
+          84,
+          3.593
+        ]
+      ],
+      [
+        "name/95",
+        [
+          76,
+          29.839
+        ]
+      ],
+      [
+        "parent/95",
+        [
+          84,
+          3.593
+        ]
+      ],
+      [
+        "name/96",
+        [
+          77,
+          29.839
+        ]
+      ],
+      [
+        "parent/96",
+        [
+          84,
+          3.593
+        ]
+      ],
+      [
+        "name/97",
+        [
+          85,
+          47.185
+        ]
+      ],
+      [
+        "parent/97",
+        [
+          63,
+          1.952
+        ]
+      ],
+      [
+        "name/98",
+        [
+          86,
+          42.077
+        ]
+      ],
+      [
+        "parent/98",
+        [
+          87,
+          3.228
+        ]
+      ],
+      [
+        "name/99",
+        [
+          88,
+          42.077
+        ]
+      ],
+      [
+        "parent/99",
+        [
+          87,
+          3.228
+        ]
+      ],
+      [
+        "name/100",
+        [
+          73,
+          29.839
+        ]
+      ],
+      [
+        "parent/100",
+        [
+          87,
+          3.228
+        ]
+      ],
+      [
+        "name/101",
+        [
+          75,
+          29.839
+        ]
+      ],
+      [
+        "parent/101",
+        [
+          87,
+          3.228
+        ]
+      ],
+      [
+        "name/102",
+        [
+          76,
+          29.839
+        ]
+      ],
+      [
+        "parent/102",
+        [
+          87,
+          3.228
+        ]
+      ],
+      [
+        "name/103",
+        [
+          77,
+          29.839
+        ]
+      ],
+      [
+        "parent/103",
+        [
+          87,
+          3.228
+        ]
+      ],
+      [
+        "name/104",
+        [
+          89,
+          47.185
+        ]
+      ],
+      [
+        "parent/104",
+        [
+          63,
+          1.952
+        ]
+      ],
+      [
+        "name/105",
+        [
+          86,
+          42.077
+        ]
+      ],
+      [
+        "parent/105",
+        [
+          90,
+          3.228
+        ]
+      ],
+      [
+        "name/106",
+        [
+          88,
+          42.077
+        ]
+      ],
+      [
+        "parent/106",
+        [
+          90,
+          3.228
+        ]
+      ],
+      [
+        "name/107",
+        [
+          73,
+          29.839
+        ]
+      ],
+      [
+        "parent/107",
+        [
+          90,
+          3.228
+        ]
+      ],
+      [
+        "name/108",
+        [
+          75,
+          29.839
+        ]
+      ],
+      [
+        "parent/108",
+        [
+          90,
+          3.228
+        ]
+      ],
+      [
+        "name/109",
+        [
+          76,
+          29.839
+        ]
+      ],
+      [
+        "parent/109",
+        [
+          90,
+          3.228
+        ]
+      ],
+      [
+        "name/110",
+        [
+          77,
+          29.839
+        ]
+      ],
+      [
+        "parent/110",
+        [
+          90,
+          3.228
+        ]
+      ],
+      [
+        "name/111",
+        [
+          71,
+          42.077
+        ]
+      ],
+      [
+        "parent/111",
+        [
+          63,
+          1.952
+        ]
+      ],
+      [
+        "name/112",
+        [
+          73,
+          29.839
+        ]
+      ],
+      [
+        "parent/112",
+        [
+          91,
+          3.593
+        ]
+      ],
+      [
+        "name/113",
+        [
+          75,
+          29.839
+        ]
+      ],
+      [
+        "parent/113",
+        [
+          91,
+          3.593
+        ]
+      ],
+      [
+        "name/114",
+        [
+          76,
+          29.839
+        ]
+      ],
+      [
+        "parent/114",
+        [
+          91,
+          3.593
+        ]
+      ],
+      [
+        "name/115",
+        [
+          77,
+          29.839
+        ]
+      ],
+      [
+        "parent/115",
+        [
+          91,
+          3.593
+        ]
+      ],
+      [
+        "name/116",
+        [
+          92,
+          47.185
+        ]
+      ],
+      [
+        "parent/116",
+        [
+          63,
+          1.952
+        ]
+      ],
+      [
+        "name/117",
+        [
+          73,
+          29.839
+        ]
+      ],
+      [
+        "parent/117",
+        [
+          93,
+          3.593
+        ]
+      ],
+      [
+        "name/118",
+        [
+          75,
+          29.839
+        ]
+      ],
+      [
+        "parent/118",
+        [
+          93,
+          3.593
+        ]
+      ],
+      [
+        "name/119",
+        [
+          76,
+          29.839
+        ]
+      ],
+      [
+        "parent/119",
+        [
+          93,
+          3.593
+        ]
+      ],
+      [
+        "name/120",
+        [
+          77,
+          29.839
+        ]
+      ],
+      [
+        "parent/120",
+        [
+          93,
+          3.593
+        ]
+      ],
+      [
+        "name/121",
+        [
+          94,
+          47.185
+        ]
+      ],
+      [
+        "parent/121",
+        [
+          63,
+          1.952
+        ]
+      ],
+      [
+        "name/122",
+        [
+          95,
+          47.185
+        ]
+      ],
+      [
+        "parent/122",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/123",
+        [
+          97,
+          47.185
+        ]
+      ],
+      [
+        "parent/123",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/124",
+        [
+          98,
+          47.185
+        ]
+      ],
+      [
+        "parent/124",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/125",
+        [
+          99,
+          47.185
+        ]
+      ],
+      [
+        "parent/125",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/126",
+        [
+          100,
+          47.185
+        ]
+      ],
+      [
+        "parent/126",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/127",
+        [
+          101,
+          47.185
+        ]
+      ],
+      [
+        "parent/127",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/128",
+        [
+          102,
+          47.185
+        ]
+      ],
+      [
+        "parent/128",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/129",
+        [
+          103,
+          47.185
+        ]
+      ],
+      [
+        "parent/129",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/130",
+        [
+          47,
+          42.077
+        ]
+      ],
+      [
+        "parent/130",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/131",
+        [
+          104,
+          47.185
+        ]
+      ],
+      [
+        "parent/131",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/132",
+        [
+          105,
+          47.185
+        ]
+      ],
+      [
+        "parent/132",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/133",
+        [
+          106,
+          47.185
+        ]
+      ],
+      [
+        "parent/133",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/134",
+        [
+          107,
+          47.185
+        ]
+      ],
+      [
+        "parent/134",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/135",
+        [
+          108,
+          47.185
+        ]
+      ],
+      [
+        "parent/135",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/136",
+        [
+          109,
+          47.185
+        ]
+      ],
+      [
+        "parent/136",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/137",
+        [
+          110,
+          47.185
+        ]
+      ],
+      [
+        "parent/137",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/138",
+        [
+          111,
+          47.185
+        ]
+      ],
+      [
+        "parent/138",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/139",
+        [
+          112,
+          47.185
+        ]
+      ],
+      [
+        "parent/139",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/140",
+        [
+          113,
+          47.185
+        ]
+      ],
+      [
+        "parent/140",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/141",
+        [
+          114,
+          47.185
+        ]
+      ],
+      [
+        "parent/141",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/142",
+        [
+          115,
+          47.185
+        ]
+      ],
+      [
+        "parent/142",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/143",
+        [
+          116,
+          47.185
+        ]
+      ],
+      [
+        "parent/143",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/144",
+        [
+          117,
+          47.185
+        ]
+      ],
+      [
+        "parent/144",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/145",
+        [
+          118,
+          47.185
+        ]
+      ],
+      [
+        "parent/145",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/146",
+        [
+          119,
+          47.185
+        ]
+      ],
+      [
+        "parent/146",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/147",
+        [
+          120,
+          47.185
+        ]
+      ],
+      [
+        "parent/147",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/148",
+        [
+          121,
+          42.077
+        ]
+      ],
+      [
+        "parent/148",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/149",
+        [
+          122,
+          47.185
+        ]
+      ],
+      [
+        "parent/149",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/150",
+        [
+          123,
+          47.185
+        ]
+      ],
+      [
+        "parent/150",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/151",
+        [
+          124,
+          47.185
+        ]
+      ],
+      [
+        "parent/151",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/152",
+        [
+          121,
+          42.077
+        ]
+      ],
+      [
+        "parent/152",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/153",
+        [
+          125,
+          47.185
+        ]
+      ],
+      [
+        "parent/153",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/154",
+        [
+          126,
+          47.185
+        ]
+      ],
+      [
+        "parent/154",
+        [
+          96,
+          1.6
+        ]
+      ],
+      [
+        "name/155",
+        [
+          127,
+          47.185
+        ]
+      ],
+      [
+        "parent/155",
+        [
+          63,
+          1.952
+        ]
+      ],
+      [
+        "name/156",
+        [
+          128,
+          47.185
+        ]
+      ],
+      [
+        "parent/156",
+        [
+          63,
+          1.952
+        ]
+      ],
+      [
+        "name/157",
+        [
+          129,
+          47.185
+        ]
+      ],
+      [
+        "parent/157",
+        [
+          63,
+          1.952
+        ]
+      ],
+      [
+        "name/158",
+        [
+          130,
+          47.185
+        ]
+      ],
+      [
+        "parent/158",
+        [
+          63,
+          1.952
+        ]
+      ],
+      [
+        "name/159",
+        [
+          131,
+          47.185
+        ]
+      ],
+      [
+        "parent/159",
+        [
+          63,
+          1.952
+        ]
+      ],
+      [
+        "name/160",
+        [
+          132,
+          47.185
+        ]
+      ],
+      [
+        "parent/160",
+        [
+          63,
+          1.952
+        ]
+      ],
+      [
+        "name/161",
+        [
+          133,
+          47.185
+        ]
+      ],
+      [
+        "parent/161",
+        [
+          63,
+          1.952
+        ]
+      ],
+      [
+        "name/162",
+        [
+          134,
+          47.185
+        ]
+      ],
+      [
+        "parent/162",
+        [
+          63,
+          1.952
+        ]
+      ],
+      [
+        "name/163",
+        [
+          135,
+          47.185
+        ]
+      ],
+      [
+        "parent/163",
+        [
+          63,
+          1.952
+        ]
+      ],
+      [
+        "name/164",
+        [
+          136,
+          47.185
+        ]
+      ],
+      [
+        "parent/164",
+        [
+          63,
+          1.952
+        ]
+      ],
+      [
+        "name/165",
+        [
+          57,
+          42.077
+        ]
+      ],
+      [
+        "parent/165",
+        [
+          63,
+          1.952
+        ]
+      ],
+      [
+        "name/166",
+        [
+          137,
+          47.185
+        ]
+      ],
+      [
+        "parent/166",
+        [
+          63,
+          1.952
+        ]
+      ]
+    ],
+    "invertedIndex": [
+      [
+        "__type",
+        {
+          "_index": 22,
+          "name": {
+            "23": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "_clickcount",
+        {
+          "_index": 99,
+          "name": {
+            "125": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "_createenumwindowproc",
+        {
+          "_index": 50,
+          "name": {
+            "53": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "_createmousehookproc",
+        {
+          "_index": 109,
+          "name": {
+            "136": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "_createmousethreadproc",
+        {
+          "_index": 107,
+          "name": {
+            "134": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "_findprogmanwindow",
+        {
+          "_index": 49,
+          "name": {
+            "52": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "_folderviewcls",
+        {
+          "_index": 42,
+          "name": {
+            "43": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "_hwnds",
+        {
+          "_index": 95,
+          "name": {
+            "122": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "_init",
+        {
+          "_index": 48,
+          "name": {
+            "51": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "_interactive",
+        {
+          "_index": 103,
+          "name": {
+            "129": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "_lastclicktime",
+        {
+          "_index": 100,
+          "name": {
+            "126": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "_mousehook",
+        {
+          "_index": 102,
+          "name": {
+            "128": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "_options",
+        {
+          "_index": 101,
+          "name": {
+            "127": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "_progmancls",
+        {
+          "_index": 39,
+          "name": {
+            "41": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "_setmousehook",
+        {
+          "_index": 106,
+          "name": {
+            "133": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "_shellviewcls",
+        {
+          "_index": 41,
+          "name": {
+            "42": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "_splitworkerandfind",
+        {
+          "_index": 51,
+          "name": {
+            "54": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "_trigger",
+        {
+          "_index": 98,
+          "name": {
+            "124": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "_window",
+        {
+          "_index": 97,
+          "name": {
+            "123": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "_workercls",
+        {
+          "_index": 43,
+          "name": {
+            "44": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "addlistener",
+        {
+          "_index": 110,
+          "name": {
+            "137": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "alawaysontop",
+        {
+          "_index": 14,
+          "name": {
+            "11": {},
+            "28": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "autocreatethread",
+        {
+          "_index": 2,
+          "name": {
+            "2": {},
+            "14": {},
+            "24": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "behindworker",
+        {
+          "_index": 31,
+          "name": {
+            "34": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "callnexthookex",
+        {
+          "_index": 134,
+          "name": {
+            "162": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "click",
+        {
+          "_index": 67,
+          "name": {
+            "70": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "clickemitcount",
+        {
+          "_index": 4,
+          "name": {
+            "3": {},
+            "15": {},
+            "25": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "clickemitduration",
+        {
+          "_index": 5,
+          "name": {
+            "4": {},
+            "16": {},
+            "26": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "clickspecifiedcount",
+        {
+          "_index": 68,
+          "name": {
+            "71": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "constructor",
+        {
+          "_index": 47,
+          "name": {
+            "49": {},
+            "130": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "count",
+        {
+          "_index": 81,
+          "name": {
+            "87": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "createthread",
+        {
+          "_index": 135,
+          "name": {
+            "163": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "defaultmaxlisteners",
+        {
+          "_index": 125,
+          "name": {
+            "153": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "desktop",
+        {
+          "_index": 33,
+          "name": {
+            "36": {},
+            "75": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "dispatchmessage",
+        {
+          "_index": 130,
+          "name": {
+            "158": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "down",
+        {
+          "_index": 69,
+          "name": {
+            "72": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "embeddedoption",
+        {
+          "_index": 7,
+          "name": {
+            "6": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "embeddedwindowintobehind",
+        {
+          "_index": 52,
+          "name": {
+            "56": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "emit",
+        {
+          "_index": 120,
+          "name": {
+            "147": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "enumwindows",
+        {
+          "_index": 58,
+          "name": {
+            "62": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "errormonitor",
+        {
+          "_index": 126,
+          "name": {
+            "154": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "eventemitter",
+        {
+          "_index": 127,
+          "name": {
+            "155": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "eventnames",
+        {
+          "_index": 124,
+          "name": {
+            "151": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "findwindowexw",
+        {
+          "_index": 55,
+          "name": {
+            "59": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "folderview",
+        {
+          "_index": 32,
+          "name": {
+            "35": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "frontworker",
+        {
+          "_index": 30,
+          "name": {
+            "33": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "getdesktopwindow",
+        {
+          "_index": 56,
+          "name": {
+            "60": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "getdoubleclicktime",
+        {
+          "_index": 15,
+          "name": {
+            "12": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "getmaxlisteners",
+        {
+          "_index": 117,
+          "name": {
+            "144": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "getmessagew",
+        {
+          "_index": 131,
+          "name": {
+            "159": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "getsystemmetrics",
+        {
+          "_index": 60,
+          "name": {
+            "64": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "gettickcount",
+        {
+          "_index": 133,
+          "name": {
+            "161": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "height",
+        {
+          "_index": 37,
+          "name": {
+            "39": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "hwndfrompoint",
+        {
+          "_index": 77,
+          "name": {
+            "80": {},
+            "82": {},
+            "91": {},
+            "96": {},
+            "103": {},
+            "110": {},
+            "115": {},
+            "120": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "hwnds",
+        {
+          "_index": 45,
+          "name": {
+            "47": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "initembeddedoption",
+        {
+          "_index": 18,
+          "name": {
+            "18": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "initshadowmouseoptions",
+        {
+          "_index": 16,
+          "name": {
+            "13": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "initshadowwindowactionoption",
+        {
+          "_index": 20,
+          "name": {
+            "20": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "interactive",
+        {
+          "_index": 6,
+          "name": {
+            "5": {},
+            "17": {},
+            "27": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "isdebug",
+        {
+          "_index": 11,
+          "name": {
+            "9": {},
+            "21": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "isunderdesktop",
+        {
+          "_index": 44,
+          "name": {
+            "46": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "left",
+        {
+          "_index": 86,
+          "name": {
+            "98": {},
+            "105": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "lib/events/mouse",
+        {
+          "_index": 63,
+          "name": {
+            "67": {}
+          },
+          "parent": {
+            "68": {},
+            "76": {},
+            "81": {},
+            "86": {},
+            "92": {},
+            "97": {},
+            "104": {},
+            "111": {},
+            "116": {},
+            "121": {},
+            "155": {},
+            "156": {},
+            "157": {},
+            "158": {},
+            "159": {},
+            "160": {},
+            "161": {},
+            "162": {},
+            "163": {},
+            "164": {},
+            "165": {},
+            "166": {}
+          }
+        }
+      ],
+      [
+        "lib/events/mouse\".mousebasicevent",
+        {
+          "_index": 74,
+          "name": {},
+          "parent": {
+            "77": {},
+            "78": {},
+            "79": {},
+            "80": {}
+          }
+        }
+      ],
+      [
+        "lib/events/mouse\".mouseclickevent",
+        {
+          "_index": 82,
+          "name": {},
+          "parent": {
+            "87": {},
+            "88": {},
+            "89": {},
+            "90": {},
+            "91": {}
+          }
+        }
+      ],
+      [
+        "lib/events/mouse\".mouseclickspecifiedcount",
+        {
+          "_index": 84,
+          "name": {},
+          "parent": {
+            "93": {},
+            "94": {},
+            "95": {},
+            "96": {}
+          }
+        }
+      ],
+      [
+        "lib/events/mouse\".mousedesktop",
+        {
+          "_index": 93,
+          "name": {},
+          "parent": {
+            "117": {},
+            "118": {},
+            "119": {},
+            "120": {}
+          }
+        }
+      ],
+      [
+        "lib/events/mouse\".mousedown",
+        {
+          "_index": 87,
+          "name": {},
+          "parent": {
+            "98": {},
+            "99": {},
+            "100": {},
+            "101": {},
+            "102": {},
+            "103": {}
+          }
+        }
+      ],
+      [
+        "lib/events/mouse\".mouseevents",
+        {
+          "_index": 66,
+          "name": {},
+          "parent": {
+            "69": {},
+            "70": {},
+            "71": {},
+            "72": {},
+            "73": {},
+            "74": {},
+            "75": {}
+          }
+        }
+      ],
+      [
+        "lib/events/mouse\".mouseinvisible",
+        {
+          "_index": 91,
+          "name": {},
+          "parent": {
+            "112": {},
+            "113": {},
+            "114": {},
+            "115": {}
+          }
+        }
+      ],
+      [
+        "lib/events/mouse\".mousemove",
+        {
+          "_index": 79,
+          "name": {},
+          "parent": {
+            "82": {},
+            "83": {},
+            "84": {},
+            "85": {}
+          }
+        }
+      ],
+      [
+        "lib/events/mouse\".mouseup",
+        {
+          "_index": 90,
+          "name": {},
+          "parent": {
+            "105": {},
+            "106": {},
+            "107": {},
+            "108": {},
+            "109": {},
+            "110": {}
+          }
+        }
+      ],
+      [
+        "lib/events/mouse\".shadowmouse",
+        {
+          "_index": 96,
+          "name": {},
+          "parent": {
+            "122": {},
+            "123": {},
+            "124": {},
+            "125": {},
+            "126": {},
+            "127": {},
+            "128": {},
+            "129": {},
+            "130": {},
+            "131": {},
+            "132": {},
+            "133": {},
+            "134": {},
+            "135": {},
+            "136": {},
+            "137": {},
+            "138": {},
+            "139": {},
+            "140": {},
+            "141": {},
+            "142": {},
+            "143": {},
+            "144": {},
+            "145": {},
+            "146": {},
+            "147": {},
+            "148": {},
+            "149": {},
+            "150": {},
+            "151": {},
+            "152": {},
+            "153": {},
+            "154": {}
+          }
+        }
+      ],
+      [
+        "lib/init_options",
+        {
+          "_index": 0,
+          "name": {
+            "0": {}
+          },
+          "parent": {
+            "1": {},
+            "6": {},
+            "8": {},
+            "12": {},
+            "13": {},
+            "18": {},
+            "20": {}
+          }
+        }
+      ],
+      [
+        "lib/init_options\".embeddedoption",
+        {
+          "_index": 9,
+          "name": {},
+          "parent": {
+            "7": {}
+          }
+        }
+      ],
+      [
+        "lib/init_options\".initembeddedoption",
+        {
+          "_index": 19,
+          "name": {},
+          "parent": {
+            "19": {}
+          }
+        }
+      ],
+      [
+        "lib/init_options\".initshadowmouseoptions",
+        {
+          "_index": 17,
+          "name": {},
+          "parent": {
+            "14": {},
+            "15": {},
+            "16": {},
+            "17": {}
+          }
+        }
+      ],
+      [
+        "lib/init_options\".initshadowwindowactionoption",
+        {
+          "_index": 21,
+          "name": {},
+          "parent": {
+            "21": {},
+            "22": {},
+            "28": {}
+          }
+        }
+      ],
+      [
+        "lib/init_options\".initshadowwindowactionoption.mouse",
+        {
+          "_index": 23,
+          "name": {},
+          "parent": {
+            "23": {}
+          }
+        }
+      ],
+      [
+        "lib/init_options\".initshadowwindowactionoption.mouse.__type",
+        {
+          "_index": 24,
+          "name": {},
+          "parent": {
+            "24": {},
+            "25": {},
+            "26": {},
+            "27": {}
+          }
+        }
+      ],
+      [
+        "lib/init_options\".shadowmouseoptions",
+        {
+          "_index": 3,
+          "name": {},
+          "parent": {
+            "2": {},
+            "3": {},
+            "4": {},
+            "5": {}
+          }
+        }
+      ],
+      [
+        "lib/init_options\".shadowwindowactionoption",
+        {
+          "_index": 12,
+          "name": {},
+          "parent": {
+            "9": {},
+            "10": {},
+            "11": {}
+          }
+        }
+      ],
+      [
+        "lib/shadow_window_action",
+        {
+          "_index": 25,
+          "name": {
+            "29": {}
+          },
+          "parent": {
+            "30": {},
+            "37": {},
+            "40": {},
+            "59": {},
+            "60": {},
+            "61": {},
+            "62": {},
+            "63": {},
+            "64": {},
+            "65": {},
+            "66": {}
+          }
+        }
+      ],
+      [
+        "lib/shadow_window_action\".screen",
+        {
+          "_index": 36,
+          "name": {},
+          "parent": {
+            "38": {},
+            "39": {}
+          }
+        }
+      ],
+      [
+        "lib/shadow_window_action\".shadowusefulhwnds",
+        {
+          "_index": 28,
+          "name": {},
+          "parent": {
+            "31": {},
+            "32": {},
+            "33": {},
+            "34": {},
+            "35": {},
+            "36": {}
+          }
+        }
+      ],
+      [
+        "lib/shadow_window_action\".shadowwindowaction",
+        {
+          "_index": 40,
+          "name": {},
+          "parent": {
+            "41": {},
+            "42": {},
+            "43": {},
+            "44": {},
+            "45": {},
+            "46": {},
+            "47": {},
+            "48": {},
+            "49": {},
+            "50": {},
+            "51": {},
+            "52": {},
+            "53": {},
+            "54": {},
+            "55": {},
+            "56": {},
+            "57": {},
+            "58": {}
+          }
+        }
+      ],
+      [
+        "listenercount",
+        {
+          "_index": 121,
+          "name": {
+            "148": {},
+            "152": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "listeners",
+        {
+          "_index": 118,
+          "name": {
+            "145": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "makewparam",
+        {
+          "_index": 137,
+          "name": {
+            "166": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "maximize",
+        {
+          "_index": 8,
+          "name": {
+            "7": {},
+            "19": {},
+            "55": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "mount",
+        {
+          "_index": 104,
+          "name": {
+            "131": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "mouse",
+        {
+          "_index": 13,
+          "name": {
+            "10": {},
+            "22": {},
+            "50": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "mousebasicevent",
+        {
+          "_index": 72,
+          "name": {
+            "76": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "mouseclickevent",
+        {
+          "_index": 80,
+          "name": {
+            "86": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "mouseclickspecifiedcount",
+        {
+          "_index": 83,
+          "name": {
+            "92": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "mousedesktop",
+        {
+          "_index": 92,
+          "name": {
+            "116": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "mousedown",
+        {
+          "_index": 85,
+          "name": {
+            "97": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "mouseevents",
+        {
+          "_index": 64,
+          "name": {
+            "68": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "mouseinvisible",
+        {
+          "_index": 71,
+          "name": {
+            "74": {},
+            "111": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "mousemove",
+        {
+          "_index": 78,
+          "name": {
+            "81": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "mouseup",
+        {
+          "_index": 89,
+          "name": {
+            "104": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "move",
+        {
+          "_index": 65,
+          "name": {
+            "69": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "off",
+        {
+          "_index": 114,
+          "name": {
+            "141": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "on",
+        {
+          "_index": 111,
+          "name": {
+            "138": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "once",
+        {
+          "_index": 112,
+          "name": {
+            "139": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "options",
+        {
+          "_index": 46,
+          "name": {
+            "48": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "pickoutwindowfrombehind",
+        {
+          "_index": 53,
+          "name": {
+            "57": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "prependlistener",
+        {
+          "_index": 122,
+          "name": {
+            "149": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "prependoncelistener",
+        {
+          "_index": 123,
+          "name": {
+            "150": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "progman",
+        {
+          "_index": 29,
+          "name": {
+            "32": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "rawlisteners",
+        {
+          "_index": 119,
+          "name": {
+            "146": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "removealllisteners",
+        {
+          "_index": 115,
+          "name": {
+            "142": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "removelistener",
+        {
+          "_index": 113,
+          "name": {
+            "140": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "right",
+        {
+          "_index": 88,
+          "name": {
+            "99": {},
+            "106": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "screen",
+        {
+          "_index": 34,
+          "name": {
+            "37": {},
+            "45": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "sendmessagew",
+        {
+          "_index": 57,
+          "name": {
+            "61": {},
+            "165": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "setforeground",
+        {
+          "_index": 54,
+          "name": {
+            "58": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "setforegroundwindow",
+        {
+          "_index": 62,
+          "name": {
+            "66": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "setinteractive",
+        {
+          "_index": 108,
+          "name": {
+            "135": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "setmaxlisteners",
+        {
+          "_index": 116,
+          "name": {
+            "143": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "setparent",
+        {
+          "_index": 59,
+          "name": {
+            "63": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "setwindowpos",
+        {
+          "_index": 61,
+          "name": {
+            "65": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "setwindowshookexw",
+        {
+          "_index": 129,
+          "name": {
+            "157": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "shadowmouse",
+        {
+          "_index": 94,
+          "name": {
+            "121": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "shadowmouseoptions",
+        {
+          "_index": 1,
+          "name": {
+            "1": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "shadowusefulhwnds",
+        {
+          "_index": 26,
+          "name": {
+            "30": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "shadowwindowaction",
+        {
+          "_index": 38,
+          "name": {
+            "40": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "shadowwindowactionoption",
+        {
+          "_index": 10,
+          "name": {
+            "8": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "target",
+        {
+          "_index": 27,
+          "name": {
+            "31": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "translatemessage",
+        {
+          "_index": 128,
+          "name": {
+            "156": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "unhookwindowshookex",
+        {
+          "_index": 136,
+          "name": {
+            "164": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "unmount",
+        {
+          "_index": 105,
+          "name": {
+            "132": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "up",
+        {
+          "_index": 70,
+          "name": {
+            "73": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "width",
+        {
+          "_index": 35,
+          "name": {
+            "38": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "window",
+        {
+          "_index": 76,
+          "name": {
+            "79": {},
+            "85": {},
+            "90": {},
+            "95": {},
+            "102": {},
+            "109": {},
+            "114": {},
+            "119": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "windowfrompoint",
+        {
+          "_index": 132,
+          "name": {
+            "160": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "x",
+        {
+          "_index": 73,
+          "name": {
+            "77": {},
+            "83": {},
+            "88": {},
+            "93": {},
+            "100": {},
+            "107": {},
+            "112": {},
+            "117": {}
+          },
+          "parent": {}
+        }
+      ],
+      [
+        "y",
+        {
+          "_index": 75,
+          "name": {
+            "78": {},
+            "84": {},
+            "89": {},
+            "94": {},
+            "101": {},
+            "108": {},
+            "113": {},
+            "118": {}
+          },
+          "parent": {}
+        }
+      ]
+    ],
+    "pipeline": []
+  }
+}

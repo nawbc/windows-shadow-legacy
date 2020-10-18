@@ -1,0 +1,32 @@
+{
+	"compilerOptions": {
+		"target": "ES5", //optional chain 不能用esnext
+		"lib": [
+			"esnext"
+		],
+		"declaration": true,
+		"declarationDir": "./dist/",
+		"allowJs": true,
+		"skipLibCheck": true,
+		"esModuleInterop": true,
+		"allowSyntheticDefaultImports": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"importsNotUsedAsValues": "preserve",
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"resolveJsonModule": true,
+		"isolatedModules": false,
+		"sourceMap": false,
+		"baseUrl": ".",
+		"outDir": "./dist"
+	},
+	"exclude": [
+		"node_modules",
+		"src",
+		"example"
+	],
+	"include": [
+		"lib/**/*"
+	]
+}
