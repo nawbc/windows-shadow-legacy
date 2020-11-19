@@ -30,15 +30,15 @@ const createWindow = (): void => {
 
 	shadowWindow.embeddedIntoDesktop();
 
-	const a = new BrowserWindow({
-		show: false,
-		webPreferences: {
-			nodeIntegration: true,
-			webSecurity: false,
-			webviewTag: true,
-			sandbox: false
-		}
-	});
+	// const a = new BrowserWindow({
+	// 	show: false,
+	// 	webPreferences: {
+	// 		nodeIntegration: true,
+	// 		webSecurity: false,
+	// 		webviewTag: true,
+	// 		sandbox: false
+	// 	}
+	// });
 
 	// a.loadFile();
 

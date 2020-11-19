@@ -1,11 +1,13 @@
-# `shadow-own-app`
+# `shadow-app`
 
 > TODO: description
 
 ## Usage
 
 ```
-const shadowOwnApp = require('shadow-own-app');
 
-// TODO: DEMONSTRATE API
+
+
 ```
+
+[For contributor](./doc/dev.md)

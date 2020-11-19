@@ -4,6 +4,6 @@ coverage
 **/node_modules/
 *.log
 package-lock.json
-temp/
+**/temp/
 .unotes
 

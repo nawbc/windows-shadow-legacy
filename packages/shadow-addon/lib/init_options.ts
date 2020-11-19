@@ -103,19 +103,19 @@ export interface ShadowWindowActionOption {
 	 */
 	mouse?: ShadowMouseOptions;
 
-	/**
-	 *
-	 *	let target window always on the most top , use windows api `setWindowPos`
-	 * @type {boolean}
-	 * @memberof ShadowWindowActionOption
-	 * @default true
-	 */
-	alawaysOnTop?: boolean
+	// /**
+	//  *
+	//  *	let target window always on the most top , use windows api `setWindowPos`
+	//  * @type {boolean}
+	//  * @memberof ShadowWindowActionOption
+	//  * @default true
+	//  */
+	// alawaysOnTop?: boolean
 }
 
 export const initShadowWindowActionOption = {
 	isDebug: false,
-	mouse: initShadowMouseOptions,
-	alawaysOnTop: false
+	mouse: initShadowMouseOptions
+	// alawaysOnTop: false
 };
 

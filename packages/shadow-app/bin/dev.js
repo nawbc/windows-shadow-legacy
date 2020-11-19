@@ -106,31 +106,30 @@ const bootRenderer = () => new Promise((resolve, reject) => {
 		!!err && log.error('Dev.js', err);
 	});
 
-	// ioHook.registerShortcut([56, 19], async () => {
-	// 	if (!!electronProcess && !!electronProcess.pid) {
-	// 		log.info('restart electron ' + electronProcess.pid);
-	// 		process.kill(electronProcess.pid);
-	// 		await bootElectron();
-	// 	}
-	// });
+	ioHook.registerShortcut([56, 19], async () => {
+		if (!!electronProcess && !!electronProcess.pid) {
+			log.info('restart electron ' + electronProcess.pid);
+			process.kill(electronProcess.pid);
+			await bootElectron();
+		}
+	});
 
 	// await bootWorkers().catch(() => {
 	// 	process.exit();
 	// });
 
-	// await bootMain().catch(() => {
-	// 	process.exit();
-	// });
+	await bootMain().catch(() => {
+		process.exit();
+	});
 
 	await bootRenderer().catch(() => {
 		process.exit();
 	});
 
-	// await bootElectron().catch(() => {
-	// 	process.exit();
-	// });
+	await bootElectron().catch(() => {
+		process.exit();
+	});
 
-	// ioHook.start();
+	ioHook.start();
 
 })();
-

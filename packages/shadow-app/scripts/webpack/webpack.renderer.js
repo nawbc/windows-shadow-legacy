@@ -44,19 +44,19 @@ module.exports = {
 	},
 	module: {
 		rules: [
-			{
-				test: /\.(js|jsx|tsx|ts)$/,
-				include: [resolve(__dirname, '../../src'), resolve(__dirname, '../../../shadow-ui/src/')],
-				enforce: 'pre',
-				use: [
-					{
-						loader: 'eslint-loader',
-						options: {
-							eslintPath: require.resolve('eslint')
-						}
-					}
-				]
-			},
+			// {
+			// 	test: /\.(js|jsx|tsx|ts)$/,
+			// 	include: [resolve(__dirname, '../../src'), resolve(__dirname, '../../../shadow-ui/src/')],
+			// 	enforce: 'pre',
+			// 	use: [
+			// 		{
+			// 			loader: 'eslint-loader',
+			// 			options: {
+			// 				eslintPath: require.resolve('eslint')
+			// 			}
+			// 		}
+			// 	]
+			// },
 			{
 				oneOf: [
 					{
@@ -126,9 +126,9 @@ module.exports = {
 	plugins: [
 		new ForkTsCheckerWebpackPlugin({
 			async: isProduction,
-			eslint: {
-				files: resolve(__dirname, '../../src/**/*')
-			},
+			// eslint: {
+			// 	files: resolve(__dirname, '../../src/**/*')
+			// },
 			typescript: {
 				configFile: resolve(__dirname, '../../tsconfig.json')
 			}

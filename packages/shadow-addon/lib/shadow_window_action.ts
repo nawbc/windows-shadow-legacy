@@ -13,13 +13,32 @@ import {
 	TakeOutOption
 } from './init_options';
 
+/**
+ * 句柄以十进制显示 
+ */
 export interface ShadowUsefulHwnds {
 	target: TS.HWND;
+	/**
+	 *  Program Manager 窗口句柄
+	 */
 	progman: TS.HWND;
-	/* windows splits desktop into two parts, the front workerw contains the SysListView32 */
+	/**
+	 * window 桌面窗口可视包含了两层 一个是放置图标的那一层
+	 * 另一个是壁纸那一层 
+	 */
 	frontWorker: TS.HWND;
+	/**
+	 * window 桌面窗口可视包含了两层 一个是放置图标的那一层
+	 * 另一个是壁纸那一层 
+	 */
 	behindWorker: TS.HWND;
+	/**
+	 * 桌面图标层窗口句柄
+	 */
 	folderView: TS.HWND;
+	/**
+	 * 桌面窗口句柄
+	 */
 	desktop: TS.HWND;
 }
 
@@ -51,13 +70,14 @@ export class ShadowWindowAction {
 	public options: ShadowWindowActionOption;
 
 	/**
-	 * @param {TS.HWND} targetHwnd - the target window handle
+	 * @param {TS.HWND} targetHwnd - 嵌入桌面的目标窗口句柄 可以是 number也可是buffer
 	 * @param {ShadowWindowActionOption} options - window action options
 	 * 
 	 * @example
 	 * 
 	 * ```ts
 	 * new ShadowWindowAction(mainWindow.getNativeWindowHandle())
+	 * or
 	 * new ShadowWindowAction(0x000406C0)
 	 * ```
 	 */
@@ -70,6 +90,7 @@ export class ShadowWindowAction {
 
 		this.hWnds = {} as ShadowUsefulHwnds;
 		this._progmanCls = _T("Progman\0");
+		// Windows 操作系统的图形用戶界面句柄
 		this._shellViewCls = _T("SHELLDLL_DefView\0");
 		this._folderViewCls = _T("SysListView32\0");
 		this._workerCls = _T("WorkerW\0");
@@ -97,7 +118,7 @@ export class ShadowWindowAction {
 
 	private _init = () => {
 		this._findProgmanWindow();
-		this._splitWorkerAndFind();
+		this._splitWorkerAndAttach();
 		this.hWnds.desktop = GetDesktopWindow();	
 	}
 
@@ -113,6 +134,7 @@ export class ShadowWindowAction {
 	private _createEnumWindowProc = () => ffi.Callback(CPP.BOOL, [CPP.HWND, CPP.LPARAM], (hWnd: TS.HWND) => {
 		const tmpShellView: TS.HWND = FindWindowExW(hWnd, 0, this._shellViewCls, null);
 		const tmpFolderView: TS.HWND = FindWindowExW(tmpShellView, 0, this._folderViewCls, null);
+
 		if (tmpShellView !== 0 && tmpFolderView !== 0) {
 			const tmpBackWorkerHwnd = FindWindowExW(0, hWnd, this._workerCls, null);
 			this.hWnds.frontWorker = hWnd;
@@ -124,7 +146,7 @@ export class ShadowWindowAction {
 		return true;
 	});
 
-	private _splitWorkerAndFind = () => {
+	private _splitWorkerAndAttach = () => {
 		SendMessageW(this.hWnds.progman!, SPLIT_PROGRAM_MG, 0, 0);
 		EnumWindows(this._createEnumWindowProc(), 0);
 
@@ -186,8 +208,9 @@ export class ShadowWindowAction {
 	}
 
 	/**
-	 *
-	 *	
+	 * 
+	 * 并激活窗口的线程 。键盘输入focus 目标窗口，
+	 * 并为用户更改不同的视觉线索。该系统分配一个优先略高前景的窗口	
 	 * @memberof ShadowWindowAction
 	 */
 	public setForeground = (): void => {

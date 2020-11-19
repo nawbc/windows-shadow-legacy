@@ -1,4 +1,4 @@
-import React, { FC, useEffect } from 'react';
+import React, { FC } from 'react';
 import ReactDOM from 'react-dom';
 import { resolve } from 'path';
 import { remote } from 'electron';
@@ -7,7 +7,7 @@ import { remote } from 'electron';
 
 const { app, BrowserWindow } = remote;
 
-const MainWindow: FC<any> = function (props) {
+const MainWindow: FC<unknown> = function () {
 
 	return (
 		<div

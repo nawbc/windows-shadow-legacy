@@ -26,7 +26,14 @@ export enum MouseEvents {
 	click = 'click',
 	clickSpecifiedCount = 'clickSpecifiedCount',
 	down = 'down',
+	/**
+	 * 鼠标
+	 */
 	up = 'up',
+	/**
+	 * 鼠标超出桌面可视区域
+	 * 
+	 */
 	mouseInvisible = 'mouseInvisible',
 	desktop = 'desktop',
 }
@@ -34,16 +41,16 @@ export enum MouseEvents {
 interface MouseBasicEvent {
 	x: number;
 	y: number;
-	window: ShadowWindowAction,
-	hWndFromPoint: TS.HWND
+	window: ShadowWindowAction;
+	hWndFromPoint: TS.HWND;
 }
 
 export interface MouseMove extends MouseBasicEvent {
-	hWndFromPoint: TS.HWND
+	hWndFromPoint: TS.HWND;
 }
 
 export interface MouseClickEvent extends MouseBasicEvent {
-	count: number
+	count: number;
 }
 
 export interface MouseClickSpecifiedCount extends MouseBasicEvent { }

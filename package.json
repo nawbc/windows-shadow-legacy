@@ -1,5 +1,5 @@
 {
-	"name": "shadow-app",
+	"name": "windows-shadow",
 	"private": true,
 	"scripts": {
 		"start:app": "lerna exec --scope=shadow-app -- npm run start",
@@ -8,8 +8,8 @@
 		"link:app": "lerna add shadow-ui --scope=shadow-app && lerna add shadow-addon --scope=shadow-app",
 		"link:addon": "lerna add win-win --scope=shadow-addon",
 		"release:addon": "npm-run-all start:addon:*",
-		"build:winwin": "lerna exec --scope=win-win -- npm run build",
-		"watch:winwin": "lerna exec --scope=win-win -- npm run watch",
+		"build:win": "lerna exec --scope=win-win -- npm run build",
+		"watch:win": "lerna exec --scope=win-win -- npm start",
 		"cloc": "cloc ./packages --windows --quiet --exclude-dir=node_modules,test,dist,build,.vscode,temp  --exclude-ext=editorconfig,eslintignore,json,log,md,bat,gitattributes,gitignore,eslintrct",
 		"changelog": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0"
 	},
