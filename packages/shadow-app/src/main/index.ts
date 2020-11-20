@@ -1,6 +1,6 @@
 import { app, BrowserWindow } from 'electron';
 import { resolve } from 'path';
-import { ShadowWindowAction, ShadowMouse, MouseEvents, MouseMove, MouseClickSpecifiedCount, MouseUp, bufferCastInt32 } from 'shadow-addon';
+import { ShadowWindowAction, ShadowMouse, MouseEvents } from 'shadow-addon';
 
 app.commandLine.appendSwitch('disable-site-isolation-trials');
 
@@ -19,7 +19,8 @@ const createWindow = (): void => {
 			nodeIntegration: true,
 			webSecurity: false,
 			webviewTag: true,
-			sandbox: false
+			sandbox: false,
+			enableRemoteModule: true 
 		}
 	});
 
@@ -30,17 +31,15 @@ const createWindow = (): void => {
 
 	shadowWindow.embeddedIntoDesktop();
 
-	// const a = new BrowserWindow({
-	// 	show: false,
-	// 	webPreferences: {
-	// 		nodeIntegration: true,
-	// 		webSecurity: false,
-	// 		webviewTag: true,
-	// 		sandbox: false
-	// 	}
-	// });
+	const shadowMouse = new ShadowMouse(shadowWindow, {
+		autoCreateThread: false
+	});
 
-	// a.loadFile();
+	console.log(shadowMouse);
+
+	shadowMouse.on(MouseEvents.clickSpecifiedCount, (event) => {
+		console.log(111);
+	});
 
 };
 
@@ -57,10 +56,3 @@ app.on('activate', () => {
 		createWindow();
 	}
 });
-
-// class MainApp {
-// 	private _initApp = () => {
-// 		console.log(1);
-// 	}
-
-// }

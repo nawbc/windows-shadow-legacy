@@ -18,6 +18,7 @@ const {
 	CreateThread,
 	UnhookWindowsHookEx,
 	SendMessageW,
+	MessageBoxW,
 	MAKEWPARAM
 } = winFns;
 
@@ -84,6 +85,7 @@ export class ShadowMouse extends EventEmitter {
 
 	/**
 	 * 
+	 * 用于控制shadow的鼠标事件 
 	 *	@param { ShadowWindowAction } window - the ShadowWindowAction instance
 	 *	@param { ShadowMouseOptions } options - the shadow mouse options
 	 *	@param { boolean } [options.autoCreateThread = true] - if auto create a thread for mouse to not block the main process
@@ -164,6 +166,7 @@ export class ShadowMouse extends EventEmitter {
 			this.emit(MouseEvents.move, moveEvent);
 
 			if (this._interactive) {
+				console.log(x, y,wParam, MAKEWPARAM(x, y));
 				SendMessageW(this._hWnds.target!, wParam as number, 0, MAKEWPARAM(x, y));
 			}
 
@@ -185,9 +188,9 @@ export class ShadowMouse extends EventEmitter {
 
 					if (this._clickCount !== preSetClickCount) {
 						this._clickCount++;
-						this._lastClickTime = GetTickCount();
+						this._lastClickTime = GetTickCount() as number;
 					} else if (this._clickCount === preSetClickCount) {
-						const currentTime = GetTickCount();
+						const currentTime = GetTickCount() as number;
 
 						if (currentTime - this._lastClickTime <= this._options.clickEmitDuration!) {
 							this.emit(MouseEvents.clickSpecifiedCount, basicArg);

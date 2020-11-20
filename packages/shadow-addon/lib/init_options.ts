@@ -8,7 +8,7 @@ const { GetDoubleClickTime } = winFns;
 export interface ShadowMouseOptions {
 	/**
 	 *
-	 *
+	 * 默认true
 	 * @type {boolean}
 	 * @memberof ShadowMouseOptions
 	 */
@@ -31,7 +31,7 @@ export interface ShadowMouseOptions {
 	clickEmitDuration?: number;
 	/**
 	 *
-	 *
+	 * 嵌入桌面的目标是否可与鼠标交互
 	 * @type {boolean}
 	 * @memberof ShadowMouseOptions
 	 * @default true

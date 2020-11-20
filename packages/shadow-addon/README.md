@@ -4,7 +4,7 @@
 
 ## Usage
 
-[Document](./doc/index.html)
+
 
 ## Notice
 

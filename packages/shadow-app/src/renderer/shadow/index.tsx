@@ -12,12 +12,12 @@ const MainWindow: FC<unknown> = function () {
 	return (
 		<div
 			className="fucker"
-		// style={{
-		// 	width: 500,
-		// 	height: 500,
-		// 	backgroundColor: 'red',
-		// 	position: 'relative'
-		// }}
+			style={{
+				width: 500,
+				height: 500,
+				backgroundColor: 'red',
+				position: 'relative'
+			}}
 		>
 			<button
 				style={{
