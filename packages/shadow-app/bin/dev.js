@@ -4,20 +4,21 @@ const webpack = require('webpack');
 const path = require('path');
 const mainConfig = require('../scripts/webpack/webpack.main');
 const rendererConfig = require('../scripts/webpack/webpack.renderer');
-const workerConfig = require('../scripts/webpack/webpack.worker');
-const { say } = require('cfonts');
+const serverConfig = require('../scripts/webpack/webpack.server');
+// const { say } = require('cfonts');
 const log = require('../scripts/utils/output');
 const rm = require('rimraf');
 const { promisify } = require('util');
-const ioHook = require('iohook');
+const { fork } = require('child_process');
+// const ioHook = require('iohook');
 
 let electronProcess = null;
 
-const printDevTitle = () =>
-	say('SHADOW', {
-		font: 'block',
-		colors: ['white']
-	});
+// const printDevTitle = () =>
+// 	say('SHADOW', {
+// 		font: 'block',
+// 		colors: ['white']
+// 	});
 
 const bootElectron = () => new Promise((resolve, reject) => {
 
@@ -25,7 +26,7 @@ const bootElectron = () => new Promise((resolve, reject) => {
 
 	electronProcess.stdout.on('data', (data) => {
 		log.info('Electron', data.toString('utf8'));
-		printDevTitle();
+		// printDevTitle();
 		resolve();
 	});
 
@@ -58,6 +59,27 @@ const bootMain = () => new Promise((resolve, reject) => {
 		}
 	});
 });
+
+// const bootServer = () => new Promise((resolve, reject) => {
+// 	const compiler = webpack(serverConfig);
+// 	compiler.hooks.done.tap('done', resolve);
+
+// 	compiler.hooks.failed.tap('failed', reject);
+
+// 	compiler.watch({
+// 		aggregateTimeout: 2500,
+// 		ignored: ['/**/*.json']
+// 	}, async (err, stats) => {
+// 		if (!!err) {
+// 			log.error('Server', err);
+// 			reject(err);
+// 		} else {
+// 			const statsJson = stats.toJson();
+// 			log.reportWebpackLog(statsJson, 'Server');
+
+// 		}
+// 	});
+// });
 
 // const bootWorkers = () => new Promise((resolve, reject) => {
 // 	const compiler = webpack(workerConfig);
@@ -106,16 +128,12 @@ const bootRenderer = () => new Promise((resolve, reject) => {
 		!!err && log.error('Dev.js', err);
 	});
 
-	ioHook.registerShortcut([56, 19], async () => {
-		if (!!electronProcess && !!electronProcess.pid) {
-			log.info('restart electron ' + electronProcess.pid);
-			process.kill(electronProcess.pid);
-			await bootElectron();
-		}
-	});
-
-	// await bootWorkers().catch(() => {
-	// 	process.exit();
+	// ioHook.registerShortcut([56, 19], async () => {
+	// 	if (!!electronProcess && !!electronProcess.pid) {
+	// 		log.info('restart electron ' + electronProcess.pid);
+	// 		process.kill(electronProcess.pid);
+	// 		await bootElectron();
+	// 	}
 	// });
 
 	await bootMain().catch(() => {
@@ -130,6 +148,6 @@ const bootRenderer = () => new Promise((resolve, reject) => {
 		process.exit();
 	});
 
-	ioHook.start();
+	// ioHook.start();
 
 })();

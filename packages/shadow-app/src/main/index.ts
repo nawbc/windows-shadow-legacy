@@ -1,10 +1,8 @@
 import { app, BrowserWindow } from 'electron';
 import { resolve } from 'path';
-import { ShadowWindowAction, ShadowMouse, MouseEvents } from 'shadow-addon';
+import { ShadowWindowAction, ShadowMouse, MouseEvents, bufferCastInt32 } from 'shadow-addon';
 
 app.commandLine.appendSwitch('disable-site-isolation-trials');
-
-app.allowRendererProcessReuse = true;
 
 if (require('electron-squirrel-startup')) { app.quit(); }
 
@@ -27,19 +25,22 @@ const createWindow = (): void => {
 	mainWindow.maximize();
 	mainWindow.loadURL(windowPath);
 
-	const shadowWindow = new ShadowWindowAction(mainWindow.getNativeWindowHandle());
+	const decimalHwnd = bufferCastInt32(mainWindow.getNativeWindowHandle());
+	
+	console.log(decimalHwnd);
+	// const shadowWindow = new ShadowWindowAction(mainWindow.getNativeWindowHandle());
 
-	shadowWindow.embeddedIntoDesktop();
+	// shadowWindow.embeddedIntoDesktop();
 
-	const shadowMouse = new ShadowMouse(shadowWindow, {
-		autoCreateThread: false
-	});
+	// const shadowMouse = new ShadowMouse(shadowWindow, {
+	// 	autoCreateThread: false
+	// });
 
-	console.log(shadowMouse);
+	// console.log(shadowMouse);
 
-	shadowMouse.on(MouseEvents.clickSpecifiedCount, (event) => {
-		console.log(111);
-	});
+	// shadowMouse.on(MouseEvents.clickSpecifiedCount, (event) => {
+	// 	console.log(111);
+	// });
 
 };
 

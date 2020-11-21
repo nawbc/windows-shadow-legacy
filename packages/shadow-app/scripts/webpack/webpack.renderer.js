@@ -19,9 +19,9 @@ module.exports = {
 	},
 	target: 'electron-renderer',
 	output: {
-		path: resolve(__dirname, '../../dist'),
 		filename: '[name].js',
-		libraryTarget: 'commonjs2'
+		libraryTarget: 'commonjs2',
+		path: resolve(__dirname, '../../dist')
 	},
 	optimization: {
 		minimize: isProduction,
